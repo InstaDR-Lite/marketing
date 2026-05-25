@@ -1,4 +1,11 @@
+
+// app/page.tsx
 import React from 'react';
+
+interface CTAButtonProps {
+  label: string;
+  variant: 'primary' | 'secondary';
+}
 
 // --- Types & Interfaces ---
 interface FeatureCardProps {
@@ -68,13 +75,6 @@ const PricePlan: React.FC<PricePlanProps> = ({ title, price, period, features, i
   </div>
 );
 
-// app/page.tsx
-import React from 'react';
-
-interface CTAButtonProps {
-  label: string;
-  variant: 'primary' | 'secondary';
-}
 
 const CTAButton: React.FC<CTAButtonProps> = ({ label, variant }) => {
   const baseStyles = "px-6 py-3 rounded-lg font-medium transition-all duration-200 text-center";
