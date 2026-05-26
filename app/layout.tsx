@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'InstaDR-Lite — On-Demand Medical Consultations. Instantly.',
+  title: 'InstaDR-Lite — Taking your practice virtual just got easier',
   description:
     'Connect with your patients in under 2 minutes. No app downloads required. Fully native web telehealth optimized for clinical performance.',
   keywords: [

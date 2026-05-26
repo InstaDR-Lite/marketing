@@ -15,12 +15,12 @@ const groupFeatures = [
   'Priority Infrastructure Support',
 ];
 
-const proFeatures = [
-  'Enterprise SLA & Uptime Guarantees',
-  'Custom EMR / EHR Integrations',
-  'Dedicated Architecture Review',
-  'On-Premise Deployment Options',
-];
+// const proFeatures = [
+//   'Enterprise SLA & Uptime Guarantees',
+//   'Custom EMR / EHR Integrations',
+//   'Dedicated Architecture Review',
+//   'On-Premise Deployment Options',
+// ];
 
 export default function PricingSection() {
   return (
@@ -80,14 +80,14 @@ export default function PricingSection() {
                 </li>
               ))}
             </ul>
-            <button className={styles.btnOutline}>Contact Architecture Team</button>
+            <button className={styles.btnOutline}>Contact Us</button>
           </div>
 
           {/* Pro / Enterprise */}
-          <div className={styles.card}>
-            <p className={styles.planLabel}>Pro / Enterprise</p>
+          {/* <div className={styles.card}>
+            <p className={styles.planLabel}>Pro</p>
             <div className={styles.price}>
-              <span className={styles.amount} style={{ fontSize: '2rem', color: 'var(--color-text-secondary)' }}>Contact Us</span>
+              <span className={styles.amount} style={{ fontSize: '2rem', color: 'var(--color-text-secondary)' }}>Enterprise</span>
             </div>
             <p className={styles.priceSub}>
               Enterprise-grade deployments with dedicated support and custom integrations.
@@ -102,7 +102,7 @@ export default function PricingSection() {
               ))}
             </ul>
             <button className={styles.btnOutline}>Get in Touch</button>
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.trustStrip}>
