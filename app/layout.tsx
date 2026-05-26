@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Syne, DM_Sans, DM_Mono } from 'next/font/google';
+import { Syne, DM_Sans, DM_Mono, Geist_Mono } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import '../styles/globals.scss';
 
@@ -21,6 +21,13 @@ const dmMono = DM_Mono({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
   variable: '--font-dm-mono',
+  display: 'swap',
+});
+
+const geistMono = Geist_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-geist-mono',
   display: 'swap',
 });
 
@@ -52,7 +59,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${dmSans.variable} ${dmMono.variable}`}
+      className={`${syne.variable} ${dmSans.variable} ${dmMono.variable} ${geistMono.variable}`}
     >
       <body>
         <ThemeProvider>

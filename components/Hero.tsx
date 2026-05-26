@@ -14,9 +14,8 @@ export default function Hero() {
         </div>
 
         <h1 className={styles.headline}>
-          On-Demand Medical<br />
-          Consultations.{' '}
-          <span className={styles.accent}>Instantly.</span>
+          Taking your practice virtual just got easier. <br />
+          {/* <span className={styles.accent}>easier.</span> */}
         </h1>
 
         <p className={styles.subheadline}>
