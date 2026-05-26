@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './Navbar.module.scss';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   return (
@@ -26,6 +27,7 @@ export default function Navbar() {
           <span className={styles.dot} />
           Live — No App Required
         </div>
+        <ThemeToggle />
         <button className={styles.ctaButton}>Create Room Link</button>
       </div>
     </nav>

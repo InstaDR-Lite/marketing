@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Syne, DM_Sans, DM_Mono } from 'next/font/google';
+import { ThemeProvider } from '@/components/ThemeProvider';
 import '../styles/globals.scss';
 
 const syne = Syne({
@@ -54,8 +55,10 @@ export default function RootLayout({
       className={`${syne.variable} ${dmSans.variable} ${dmMono.variable}`}
     >
       <body>
-        <div className="noise-overlay" aria-hidden="true" />
-        {children}
+        <ThemeProvider>
+          <div className="noise-overlay" aria-hidden="true" />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

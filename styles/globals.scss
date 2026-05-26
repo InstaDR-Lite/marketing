@@ -34,6 +34,31 @@
   --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+// ─── LIGHT THEME ───────────────────────────────────────────────────────────
+[data-theme="light"] {
+  --color-bg:          #F4F7FB;
+  --color-surface:     #FFFFFF;
+  --color-surface-2:   #EDF1F7;
+  --color-surface-3:   #E2E8F2;
+  --color-border:      rgba(0, 0, 0, 0.08);
+  --color-border-2:    rgba(0, 0, 0, 0.14);
+
+  --color-teal:        #0799A8;
+  --color-teal-dim:    rgba(7, 153, 168, 0.10);
+  --color-teal-glow:   rgba(7, 153, 168, 0.20);
+  --color-teal-dark:   #066E7A;
+
+  --color-text-primary:   #0D1828;
+  --color-text-secondary: #4A5E78;
+  --color-text-muted:     #8A9BB0;
+
+  --color-white:       #FFFFFF;
+  --color-success:     #16A34A;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.08), 0 8px 32px rgba(0,0,0,0.07);
+  --shadow-glow: 0 0 40px rgba(7, 153, 168, 0.12);
+}
+
 // ─── RESET ─────────────────────────────────────────────────────────────────
 *, *::before, *::after {
   box-sizing: border-box;
@@ -54,6 +79,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 a {
