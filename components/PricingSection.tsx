@@ -107,16 +107,16 @@ export default function PricingSection() {
 
         <div className={styles.trustStrip}>
           <div className={styles.trustItem}>
-            <span className={styles.trustIcon}>🔒</span>
-            No credit card to start
+            <span className={styles.trustIcon}>💳</span>
+            30-Day Free Trial (Card Required)
           </div>
           <div className={styles.trustItem}>
             <span className={styles.trustIcon}>⚡</span>
-            Live in under 5 minutes
+             Go live instantly
           </div>
           <div className={styles.trustItem}>
             <span className={styles.trustIcon}>✕</span>
-            Cancel anytime
+            1-Click cancellation anytime
           </div>
           <div className={styles.trustItem}>
             <span className={styles.trustIcon}>🛡️</span>

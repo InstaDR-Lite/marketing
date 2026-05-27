@@ -7,8 +7,8 @@ export default function Footer() {
         <div className={styles.top}>
           <div className={styles.brand}>
             <div className={styles.logoWrap}>
-              <div className={styles.logoMark}>iD</div>
-              <span>InstaDR<em>-Lite</em></span>
+              {/* <div className={styles.logoMark}>iD</div> */}
+              <span>InstaDR</span>
             </div>
             <p>
               Native web telehealth built for the independent practitioner.

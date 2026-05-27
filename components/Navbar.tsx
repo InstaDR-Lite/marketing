@@ -8,10 +8,10 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <div className={styles.logoMark}>
-          <span>iD</span>
+          {/* <span>iD</span> */}
         </div>
         <span className={styles.logoText}>
-          InstaDR<span>-Lite</span>
+          InstaDR
         </span>
       </div>
 

@@ -57,21 +57,21 @@ export default function BillingSection() {
             <div className={styles.feature}>
               <div className={styles.featureIcon}>⚡</div>
               <div className={styles.featureText}>
-                <h4>Direct Stripe Integration</h4>
+                <h4>Bring Your Own Stripe (BYOS)</h4>
                 <p>
-                  Connect your existing Stripe account in 30 seconds. Co-pays and
-                  session fees route directly to your bank account the moment the
-                  consultation ends.
+                  Connect your existing Stripe account in 30 seconds. Co-pays and session fees
+                  route directly to your bank account with 0% platform fees. Your practice, your money.
                 </p>
               </div>
             </div>
             <div className={styles.feature}>
               <div className={styles.featureIcon}>🔒</div>
               <div className={styles.featureText}>
-                <h4>Zero Cuts</h4>
+                <h4>Managed Instant Payouts</h4>
                 <p>
-                  Patients never pay us, and we never take a percentage of your
-                  hard-earned revenue. It's your practice, your money.
+                  Don&apos;t have a merchant account? Use our native infrastructure to accept
+                  patient cards instantly. We handle the routing and
+                  compliance for a minimal 2% convenience fee.
                 </p>
               </div>
             </div>
