@@ -1,0 +1,192 @@
+.section {
+  padding: 7rem 1.5rem;
+  position: relative;
+  border-top: 1px solid var(--color-border);
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+// ─── Header ───────────────────────────────────────────────────────────────
+.header {
+  margin-bottom: 3rem;
+}
+
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &::before { content: '//'; color: var(--color-text-muted); }
+}
+
+.headline {
+  font-family: var(--font-mono);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  line-height: 1.1;
+}
+
+// ─── FAQ list ─────────────────────────────────────────────────────────────
+.list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-border);
+}
+
+// ─── Item ─────────────────────────────────────────────────────────────────
+.item {
+  border-bottom: 1px solid var(--color-border);
+
+  &:last-child { border-bottom: none; }
+
+  &.open {
+    .answer    { display: block; }
+    .indicator { color: var(--color-teal); }
+    .indicator::before { content: '[-]'; }
+    .question  { color: var(--color-teal); }
+    .itemHeader { background: var(--color-teal-dim); }
+  }
+}
+
+.itemHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 1.25rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  transition: background var(--transition);
+
+  &:hover {
+    background: var(--color-teal-dim);
+
+    .question { color: var(--color-teal); }
+  }
+}
+
+.questionWrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.index {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  min-width: 28px;
+}
+
+.question {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  transition: color var(--transition);
+}
+
+.indicator {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  letter-spacing: 0.04em;
+  margin-top: 0.15rem;
+  transition: color var(--transition);
+
+  &::before { content: '[+]'; }
+}
+
+// ─── Answer ───────────────────────────────────────────────────────────────
+.answer {
+  display: none;
+  padding: 0 1.25rem 1.25rem 3.25rem;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.answerText {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  padding-top: 1rem;
+
+  strong {
+    color: var(--color-teal);
+    font-weight: 600;
+  }
+
+  code {
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-teal);
+  }
+}
+
+// ─── CTA strip ────────────────────────────────────────────────────────────
+.ctaStrip {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--color-border-2);
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .ctaText {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+
+    &::before { content: '> '; color: var(--color-text-muted); }
+  }
+
+  .ctaBtn {
+    height: 38px;
+    padding: 0 1.25rem;
+    border: 1px solid var(--color-teal);
+    background: transparent;
+    color: var(--color-teal);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all var(--transition);
+
+    &::before { content: '$ '; }
+
+    &:hover {
+      background: var(--color-teal);
+      color: var(--color-bg);
+    }
+  }
+}
