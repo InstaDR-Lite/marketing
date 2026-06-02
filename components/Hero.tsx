@@ -1,4 +1,5 @@
 import styles from './Hero.module.scss';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -23,6 +24,9 @@ export default function Hero() {
           Fully native web telehealth optimized for clinical performance.
         </p>
 
+        
+
+       
         <div className={styles.ctaGroup}>
           <button className={styles.btnPrimary}>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -39,6 +43,24 @@ export default function Hero() {
         </div>
       </div>
 
+       <Image
+          src="/dashboard-preview-1.jpg"
+          alt="InstaDR-Lite Dashboard"
+          width={900}
+        height={900}
+        style={{
+            objectFit: 'cover',
+            borderRadius: '12px',
+          boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)', 
+          margin: '32px 0',
+          height: 'auto',
+          width: '100%',
+            maxWidth: '900px',
+        }}
+          // className="w-full border border-[rgba(0,80,40,0.18)]"
+          priority
+      />
+      
       <div className={styles.statsStrip}>
         <div className={styles.stat}>
           <div className={styles.statValue}>&lt;2 min</div>
