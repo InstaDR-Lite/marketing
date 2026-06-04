@@ -44,7 +44,7 @@ export default function Hero() {
       </div>
 
        <Image
-          src="/dashboard-preview.png"
+          src="/dashboard-preview.jpg"
           alt="InstaDR-Lite Dashboard"
           width={900}
         height={900}
