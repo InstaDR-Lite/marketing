@@ -44,7 +44,7 @@ export default function PricingSection() {
             <p className={styles.planLabelFeatured}>Independent Practitioner</p>
             <div className={styles.price}>
               <span className={styles.currency}>$</span>
-              <span className={styles.amount}>49</span>
+              <span className={styles.amount}>79</span>
               <span className={styles.period}>&nbsp;/ month</span>
             </div>
             <p className={styles.priceSub}>
