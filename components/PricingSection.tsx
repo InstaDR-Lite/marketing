@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './PricingSection.module.scss';
 
 const soloFeatures = [
@@ -59,7 +60,9 @@ export default function PricingSection() {
                 </li>
               ))}
             </ul>
-            <button className={styles.btnCta}>Secure Your Room Link</button>
+            <button className={styles.btnCta}>
+              <Link href="https://localhost:3000/signup?plan=monthly">Secure Your Room Link</Link>
+            </button>
           </div>
 
           {/* Group Practice */}

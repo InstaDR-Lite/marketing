@@ -15,7 +15,7 @@ export default function Hero() {
         </div>
 
         <h1 className={styles.headline}>
-          Taking your practice virtual just got easier. <br />
+          Every telehealth session. Documented. Paid. Compliant.
           {/* <span className={styles.accent}>easier.</span> */}
         </h1>
 
