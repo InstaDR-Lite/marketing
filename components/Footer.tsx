@@ -7,12 +7,11 @@ export default function Footer() {
         <div className={styles.top}>
           <div className={styles.brand}>
             <div className={styles.logoWrap}>
-              {/* <div className={styles.logoMark}>iD</div> */}
-              <span>InstaDR</span>
+              <div className={styles.logoMark}>iRM</div>
+              <span>InstaRoom</span>
             </div>
             <p>
-              Native web telehealth built for the independent practitioner.
-              No downloads, no middlemen, no compromise.
+              Your permanent clinical room. Your room. Your patients. Your terms.
             </p>
           </div>
 
@@ -29,17 +28,17 @@ export default function Footer() {
           <div>
             <p className={styles.colTitle}>Company</p>
             <ul className={styles.colLinks}>
-              <li><a href="#">About InstaDR</a></li>
+              <li><a href="#">About InstaRoom</a></li>
               <li><a href="#">Security</a></li>
               <li><a href="#">HIPAA Compliance</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="mailto:hello@instaroom.link">Contact</a></li>
             </ul>
           </div>
         </div>
 
         <div className={styles.bottom}>
           <span className={styles.copy}>
-            © {new Date().getFullYear()} InstaDR Technologies. All rights reserved.
+            © {new Date().getFullYear()} InstaRoom. All rights reserved.
           </span>
           <div className={styles.legal}>
             <a href="#">Privacy Policy</a>
