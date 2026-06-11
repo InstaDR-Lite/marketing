@@ -1,7 +1,36 @@
+'use client';
+
 import styles from './Hero.module.scss';
 import Image from 'next/image';
 
+import { useEffect, useState } from 'react';
+
+const SLUGS = [
+  'dr.lewis',
+  'sarah-therapy',
+  'dr-patel-cardiology',
+  'nurse.jennifer',
+  'oakland-wellness',
+  'dr.chen-psychiatry',
+];
+
+
 export default function Hero() {
+
+  const [slugIndex, setSlugIndex] = useState(0);
+  const [visible, setVisible]     = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setSlugIndex(i => (i + 1) % SLUGS.length);
+        setVisible(true);
+      }, 300);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);  
+
   return (
     <section className={styles.hero}>
       <div className={styles.bgGrid} />
@@ -9,38 +38,40 @@ export default function Hero() {
       <div className={styles.bgCircle} />
       <div className={styles.bgCircle} />
 
-      <div className={styles.content}>
-        <div className={styles.eyebrow}>
-          ⬡ &nbsp;Built on MediaDance Real-Time Core
-        </div>
+      {/* <div className={styles.eyebrow}>
+        ⬡ &nbsp;Your permanent clinical room
+      </div> */}
 
-        <h1 className={styles.headline}>
-          Every telehealth session. Documented. Paid. Compliant.
-          {/* <span className={styles.accent}>easier.</span> */}
-        </h1>
 
-        <p className={styles.subheadline}>
-          Connect with your patients in under 2 minutes. No app downloads required.
-          Fully native web telehealth optimized for clinical performance.
-        </p>
+      <div className={`${styles.roomExamples} ${styles.eyebrow}`}>
+        <span className={styles.domain}>instaroom.link/</span>
+        <span className={`${styles.slug} ${visible ? styles.visible : styles.hidden}`}>
+          {SLUGS[slugIndex]}
+        </span>
+      </div>
+      <h1 className={styles.headline}>
+        Get your permanent room today
+      </h1>
 
-        
+      <p className={styles.subheadline}>
+        Get your telehealth room in 5 minutes.
+        One link. Every patient. Any device.
+        No app downloads. No scheduling friction.
+      </p>
 
-       
-        <div className={styles.ctaGroup}>
-          <button className={styles.btnPrimary}>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M8 2v12M2 8h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
-            Create Your Room Link
-          </button>
-          <button className={styles.btnSecondary}>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M6 4l6 4-6 4V4z" fill="currentColor"/>
-            </svg>
-            Watch Demo
-          </button>
-        </div>
+      <div className={styles.ctaGroup}>
+        <button className={styles.btnPrimary}>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 2v12M2 8h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+          </svg>
+          Claim Your Room →
+        </button>
+        <button className={styles.btnSecondary}>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M6 4l6 4-6 4V4z" fill="currentColor"/>
+          </svg>
+          Watch Demo
+        </button>
       </div>
 
        <Image
@@ -61,7 +92,7 @@ export default function Hero() {
           priority
       />
       
-      <div className={styles.statsStrip}>
+      {/* <div className={styles.statsStrip}>
         <div className={styles.stat}>
           <div className={styles.statValue}>&lt;2 min</div>
           <div className={styles.statLabel}>Patient Connect Time</div>
@@ -78,7 +109,7 @@ export default function Hero() {
           <div className={styles.statValue}>Zero</div>
           <div className={styles.statLabel}>Apps to Install</div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
