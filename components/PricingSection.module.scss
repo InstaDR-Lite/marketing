@@ -154,7 +154,7 @@
 
 .priceSub {
   font-size: 0.8rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
   margin-bottom: 1.75rem;
   line-height: 1.5;
   min-height: 2.5rem;
@@ -252,4 +252,55 @@
   .trustIcon {
     color: var(--color-teal);
   }
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--color-surface);
+  border-radius: 8px;
+  padding: 4px;
+  margin: 16px auto 0;
+  width: fit-content;
+}
+
+.toggleActive {
+  background: var(--color-accent);
+  color: var(--color-text-primary);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggleInactive {
+  background: transparent;
+  color: var(--color-text-muted);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.saveBadge {
+  background: rgba(0, 180, 140, 0.15);
+  color: var(--color-accent);
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.annualNote {
+  font-size: 0.8rem;
+  color: var(--color-accent);
+  margin: -8px 0 8px;
 }
