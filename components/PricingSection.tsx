@@ -37,7 +37,7 @@ export default function PricingSection() {
             One plan. Everything included.
           </h2>
           <p className={styles.desc}>
-            30-day free trial. No surprises. Cancel anytime.
+            14-day free trial. No surprises. Cancel anytime.
           </p>
 
           {/* Billing toggle */}
