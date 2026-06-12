@@ -9,7 +9,7 @@ export default function WorkflowSection() {
           Engineered for the Modern Practice
         </h2>
         <p className={styles.sectionDesc}>
-          Stop fighting with bloated portals. InstaDR-Lite wraps your entire clinical
+          Stop fighting with bloated portals. InstaRoom wraps your entire clinical
           day into a single, seamless timeline.
         </p>
 

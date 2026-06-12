@@ -50,7 +50,7 @@ export default function Hero() {
         </span>
       </div>
       <h1 className={styles.headline}>
-        Get your permanent room today
+        Get your permanent virtual room today
       </h1>
 
       <p className={styles.subheadline}>
@@ -76,7 +76,7 @@ export default function Hero() {
 
        <Image
           src="/dashboard-preview.jpg"
-          alt="InstaDR-Lite Dashboard"
+          alt="InstaRoom Dashboard"
           width={900}
         height={900}
         style={{

@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'InstaDR-Lite — Taking your practice virtual just got easier',
+  title: 'InstaRoom — Get your permanent virtual room today',
   description:
     'Connect with your patients in under 2 minutes. No app downloads required. Fully native web telehealth optimized for clinical performance.',
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'HIPAA telehealth',
   ],
   openGraph: {
-    title: 'InstaDR-Lite — Telehealth Built for Independent Practitioners',
+    title: 'InstaRoom — Get your permanent virtual room today',
     description:
       'Sub-45ms video. Direct Stripe payouts. Permanent room link. Zero cuts.',
     type: 'website',

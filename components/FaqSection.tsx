@@ -9,8 +9,8 @@ const faqs = [
     a: '<strong>No.</strong> That\'s the whole point. Your patient taps the link you send them and the call opens natively inside Safari or Chrome — on any device. Zero installs, zero friction, zero support calls from patients who can\'t figure out the app.',
   },
   {
-    q: 'How is InstaDR-Lite different from doxy.me?',
-    a: 'doxy.me is a video tool with clinical features bolted on. <strong>InstaDR-Lite is built around the clinical relationship, not the video call.</strong> That means geo-verification before the call connects, consent flows built in, recurring billing tied to appointments, and direct Stripe payouts with zero cuts — not afterthoughts, not add-ons.',
+    q: 'How is InstaRoom different from doxy.me?',
+    a: 'doxy.me is a video tool with clinical features bolted on. <strong>InstaRoom is built around the clinical relationship, not the video call.</strong> That means geo-verification before the call connects, consent flows built in, recurring billing tied to appointments, and direct Stripe payouts with zero cuts — not afterthoughts, not add-ons.',
   },
   {
     q: 'What does "permanent room link" mean?',
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: 'Does it sync with my existing calendar?',
-    a: 'Yes. <strong>Two-way Google Calendar sync</strong> is built in — appointments you create in InstaDR-Lite appear in your Google Cal, and changes you make in Google Cal reflect back. We also generate an <code>.ics</code> feed you can subscribe to from Apple Calendar or Outlook.',
+    a: 'Yes. <strong>Two-way Google Calendar sync</strong> is built in — appointments you create in InstaRoom appear in your Google Cal, and changes you make in Google Cal reflect back. We also generate an <code>.ics</code> feed you can subscribe to from Apple Calendar or Outlook.',
   },
   {
     q: 'What happens when a patient clicks the invite link?',
@@ -38,10 +38,10 @@ const faqs = [
   },
   {
     q: 'Is the video actually reliable on 4G?',
-    a: '<strong>Yes.</strong> InstaDR-Lite runs on MediaDance — our own native WebRTC infrastructure with a strict ≤150ms round-trip latency boundary. It adapts dynamically to weak cellular connections in real time. Your patient in a parking lot between sessions will still have a clean call.',
+    a: '<strong>Yes.</strong> InstaRoom runs on MediaDance — our own native WebRTC infrastructure with a strict ≤150ms round-trip latency boundary. It adapts dynamically to weak cellular connections in real time. Your patient in a parking lot between sessions will still have a clean call.',
   },
   {
-    q: 'Is InstaDR-Lite HIPAA compliant?',
+    q: 'Is InstaRoom HIPAA compliant?',
     a: 'The platform is architected for HIPAA compliance — <strong>no clinical data or session metadata is stored on our servers.</strong> Patient communication channels run completely isolated. We sign a BAA with all providers. That said, HIPAA compliance is a shared responsibility — your workflows and device security matter too.',
   },
   {
