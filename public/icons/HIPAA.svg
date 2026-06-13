@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield outline -->
+  <path d="M16 2L4 7V16C4 22.5 9.5 28 16 30C22.5 28 28 22.5 28 16V7L16 2Z" 
+        stroke="#999" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
+  <!-- Scanlines inside shield -->
+  <line x1="7" y1="12" x2="25" y2="12" stroke="#999" strokeWidth="0.4" strokeDasharray="2 2" opacity="0.3"/>
+  <line x1="6" y1="15" x2="26" y2="15" stroke="#999" strokeWidth="0.4" strokeDasharray="2 2" opacity="0.3"/>
+  <line x1="6" y1="18" x2="26" y2="18" stroke="#999" strokeWidth="0.4" strokeDasharray="2 2" opacity="0.3"/>
+  <!-- Lock body -->
+  <rect x="12" y="17" width="8" height="6" rx="1" stroke="#999" strokeWidth="1.5" fill="none"/>
+  <!-- Lock shackle -->
+  <path d="M13 17V14.5C13 12.6 19 12.6 19 14.5V17" stroke="#999" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+  <!-- Lock keyhole -->
+  <circle cx="16" cy="20" r="1" fill="currentColor"/>
+  <line x1="16" y1="21" x2="16" y2="22" stroke="#999" strokeWidth="1" strokeLinecap="round"/>
+</svg>

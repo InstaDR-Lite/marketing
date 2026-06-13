@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Calendar body -->
+  <rect x="3" y="5" width="26" height="24" rx="1" stroke="#999" strokeWidth="1.5" fill="none"/>
+  <!-- Header bar -->
+  <line x1="3" y1="12" x2="29" y2="12" stroke="#999" strokeWidth="1.5"/>
+  <!-- Binding posts -->
+  <line x1="10" y1="2" x2="10" y2="8" stroke="#999" strokeWidth="1.5" strokeLinecap="round"/>
+  <line x1="22" y1="2" x2="22" y2="8" stroke="#999" strokeWidth="1.5" strokeLinecap="round"/>
+  <!-- Grid dots — days -->
+  <rect x="7" y="15" width="3" height="3" rx="0.5" stroke="#999" strokeWidth="1" fill="none"/>
+  <rect x="13" y="15" width="3" height="3" rx="0.5" stroke="#999" strokeWidth="1" fill="none"/>
+  <rect x="19" y="15" width="3" height="3" rx="0.5" stroke="#999" strokeWidth="1" fill="none"/>
+  <rect x="7" y="21" width="3" height="3" rx="0.5" stroke="#999" strokeWidth="1" fill="none"/>
+  <!-- Highlighted day - filled -->
+  <rect x="13" y="21" width="3" height="3" rx="0.5" fill="#0cead8"/>
+  <rect x="19" y="21" width="3" height="3" rx="0.5" stroke="#999" strokeWidth="1" fill="none"/>
+  <!-- Scanline -->
+  <line x1="5" y1="9" x2="27" y2="9" stroke="#999" strokeWidth="0.4" strokeDasharray="2 2" opacity="0.3"/>
+</svg>
