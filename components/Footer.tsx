@@ -28,10 +28,10 @@ export default function Footer() {
           <div>
             <p className={styles.colTitle}>Company</p>
             <ul className={styles.colLinks}>
-              <li><a href="#">About InstaRoom</a></li>
-              <li><a href="#">Security</a></li>
-              <li><a href="#">HIPAA Compliance</a></li>
-              <li><a href="mailto:hello@instaroom.link">Contact</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/security">Security</a></li>
+              <li><a href="/hipaa">HIPAA Compliance</a></li>
+              <li><a href="mailto:rupesh@instadr.link">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -41,9 +41,9 @@ export default function Footer() {
             © {new Date().getFullYear()} InstaRoom. All rights reserved.
           </span>
           <div className={styles.legal}>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">BAA</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/baa">BAA</a>
           </div>
         </div>
       </div>
