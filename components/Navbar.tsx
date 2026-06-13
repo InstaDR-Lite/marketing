@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import styles from './Navbar.module.scss';
 import ThemeToggle from './ThemeToggle';
 
@@ -16,10 +17,10 @@ export default function Navbar() {
       </div>
 
       <ul className={styles.navLinks}>
-        <li><a href="#workflow">Workflow</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#billing">Billing</a></li>
-        <li><a href="#pricing">Pricing</a></li>
+        <Link href="/#workflow">Workflow</Link>
+        <Link href="/#video">Video</Link>
+        <Link href="/#billing">Billing</Link>
+        <Link href="/#pricing">Pricing</Link>
       </ul>
 
       <div className={styles.navCta}>

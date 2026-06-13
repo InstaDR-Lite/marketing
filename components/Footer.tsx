@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Footer.module.scss';
 
 export default function Footer() {
@@ -18,10 +19,10 @@ export default function Footer() {
           <div>
             <p className={styles.colTitle}>Product</p>
             <ul className={styles.colLinks}>
-              <li><a href="#workflow">Workflow</a></li>
-              <li><a href="#video">Video Engine</a></li>
-              <li><a href="#billing">Billing</a></li>
-              <li><a href="#pricing">Pricing</a></li>
+              <Link href="/#workflow">Workflow</Link>
+              <Link href="/#video">Video Engine</Link>
+              <Link href="/#billing">Billing</Link>
+              <Link href="/#pricing">Pricing</Link>
             </ul>
           </div>
 
