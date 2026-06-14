@@ -1,4 +1,5 @@
 import styles from './BillingSection.module.scss';
+import { DollarSign, CreditCard } from 'lucide-react';
 
 const recentPayouts = [
   { initials: 'SL', name: 'Sarah L.', time: '2 min ago', amount: '+$75' },
@@ -55,7 +56,9 @@ export default function BillingSection() {
 
           <div className={styles.features}>
             <div className={styles.feature}>
-              <div className={styles.featureIcon}>⚡</div>
+              <div className={styles.featureIcon}>
+                <CreditCard size={16} color="var(--color-teal)" />
+              </div>
               <div className={styles.featureText}>
                 <h4>Bring Your Own Stripe (BYOS)</h4>
                 <p>
@@ -65,7 +68,9 @@ export default function BillingSection() {
               </div>
             </div>
             <div className={styles.feature}>
-              <div className={styles.featureIcon}>🔒</div>
+              <div className={styles.featureIcon}>
+                <DollarSign size={16} color="var(--color-teal)" />
+              </div>
               <div className={styles.featureText}>
                 <h4>Managed Instant Payouts</h4>
                 <p>

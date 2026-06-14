@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './PricingSection.module.scss';
+import { CreditCard, Zap, ShieldCheck } from 'lucide-react';
 
 const soloFeatures = [
   '1 Permanent Room Link (instaroom.link/your-name)',
@@ -120,11 +121,15 @@ export default function PricingSection() {
 
         <div className={styles.trustStrip}>
           <div className={styles.trustItem}>
-            <span className={styles.trustIcon}>💳</span>
+            <span className={styles.trustIcon}>
+              <CreditCard size={14} color='var(--color-teal)'/>
+            </span>
             14-day free trial
           </div>
           <div className={styles.trustItem}>
-            <span className={styles.trustIcon}>⚡</span>
+            <span className={styles.trustIcon}>
+              <Zap size={14} color='var(--color-teal)'/>
+            </span>
             Go live in 5 minutes
           </div>
           <div className={styles.trustItem}>
@@ -132,7 +137,9 @@ export default function PricingSection() {
             Cancel anytime
           </div>
           <div className={styles.trustItem}>
-            <span className={styles.trustIcon}>🛡️</span>
+            <span className={styles.trustIcon}>
+              <ShieldCheck size={14} color='var(--color-teal)'/>
+            </span>
             HIPAA-ready
           </div>
         </div>
