@@ -1,0 +1,241 @@
+.section {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg);
+  padding: 80px 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-teal);
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: end;
+  margin-bottom: 48px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.headline {
+  font-family: var(--font-body);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+
+  span {
+    color: var(--color-teal);
+    font-weight: 500;
+  }
+}
+
+.subhead {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 400px;
+}
+
+.comingSoon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 4px 10px;
+  border: 1px solid var(--color-teal);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--color-teal);
+  letter-spacing: 0.1em;
+}
+
+// Table
+.tableWrap {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--color-surface);
+  margin-bottom: 48px;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-border);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tableLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.08em;
+}
+
+.immutableBadge {
+  margin-left: auto;
+  padding: 2px 8px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--color-teal);
+  border: 1px solid var(--color-teal);
+  border-radius: 2px;
+  letter-spacing: 0.06em;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.th {
+  padding: 12px 20px;
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tr {
+  border-bottom: 1px solid var(--color-border);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &.live {
+    background: rgba(255, 209, 102, 0.03);
+  }
+}
+
+.td {
+  padding: 14px 20px;
+}
+
+.callId {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-teal);
+}
+
+.timestamp {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.providerName {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-text-primary);
+}
+
+.duration {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-primary);
+
+  &.active {
+    color: #ffd166;
+  }
+}
+
+.streamBadge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  border-radius: 2px;
+  border: 1px solid var(--color-teal);
+  color: var(--color-teal);
+
+  &.live {
+    color: #ffd166;
+    border-color: #ffd166;
+  }
+}
+
+// Pillars
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pillar {
+  padding: 24px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.pillarIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  margin-bottom: 16px;
+  color: var(--color-teal);
+}
+
+.pillarTitle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-primary);
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.pillarDesc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}

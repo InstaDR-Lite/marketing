@@ -7,7 +7,8 @@ import FeaturesSection from '@/components/FeaturesSection';
 import PricingSection from '@/components/PricingSection';
 import Footer from '@/components/Footer';
 import FaqSection from '@/components/FaqSection';
-import FeaturesStrip from '@/components/FeaturesStrip';
+import ComplianceSection from '@/components/ComplianceSection';
+// import FeaturesStrip from '@/components/FeaturesStrip';
 
 export default function Home() {
   return (
@@ -15,10 +16,11 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <FeaturesStrip />
+        {/* <FeaturesStrip /> */}
         <WorkflowSection />
         <VideoSection />
         <BillingSection />
+        <ComplianceSection />
         <FeaturesSection />
         <PricingSection />
         <FaqSection />
