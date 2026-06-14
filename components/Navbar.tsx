@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <div className={styles.logoMark}>
-          <span>iRM</span>
+          <span>IR</span>
         </div>
         <span className={styles.logoText}>
           InstaRoom
@@ -24,14 +24,14 @@ export default function Navbar() {
       </ul>
 
       <div className={styles.navCta}>
-        <div className={styles.badge}>
+        {/* <div className={styles.badge}>
           <span className={styles.dot} />
           Live — No App Required
-        </div>
+        </div> */}
         <ThemeToggle />
         <button 
           className={styles.ctaButton}
-          onClick={() => window.location.href = 'https://instaroom.link/signup'}
+          onClick={() => window.location.href = '/#pricing'}
         >
           Claim Your Room →
         </button>

@@ -24,8 +24,7 @@
   .logoMark {
     width: 32px;
     height: 32px;
-    border-radius: 8px;
-    background: var(--color-teal);
+    border: 2px solid var(--color-teal);
     display: grid;
     place-items: center;
 
@@ -33,7 +32,7 @@
       font-family: var(--font-display);
       font-weight: 800;
       font-size: 0.85rem;
-      color: var(--color-bg);
+      color: var(--color-text-secondary);
       letter-spacing: -0.02em;
     }
   }
@@ -91,7 +90,7 @@
     transition: all var(--transition);
 
     &:hover {
-      background: var(--color-white);
+      opacity: 0.8;
       transform: translateY(-1px);
       box-shadow: 0 4px 20px var(--color-teal-glow);
     }

@@ -60,7 +60,10 @@ export default function Hero() {
       </p>
 
       <div className={styles.ctaGroup}>
-        <button className={styles.btnPrimary}>
+        <button
+          className={styles.btnPrimary}
+          onClick={() => window.location.href = '/#pricing'}
+        >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M8 2v12M2 8h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
           </svg>
