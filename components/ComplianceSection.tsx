@@ -85,7 +85,7 @@ export default function ComplianceSection() {
           <div className={styles.tableHeader}>
             <Video size={12} color="var(--color-teal)" />
             <span className={styles.tableLabel}>CALL LOG — WRITE-ONCE RECORDS</span>
-            <span className={styles.immutableBadge}>IMMUTABLE</span>
+            <span className={styles.immutableBadge}>DOWNLOAD</span>
           </div>
 
           <div style={{ overflowX: 'auto' }}>
