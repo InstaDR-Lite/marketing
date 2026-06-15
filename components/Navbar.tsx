@@ -18,7 +18,7 @@ export default function Navbar() {
 
       <ul className={styles.navLinks}>
         <Link href="/#workflow">Workflow</Link>
-        <Link href="/#video">Video</Link>
+        <Link href="/#compliance">Compliance</Link>
         <Link href="/#billing">Billing</Link>
         <Link href="/#pricing">Pricing</Link>
       </ul>

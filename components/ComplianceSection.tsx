@@ -56,7 +56,7 @@ const PILLARS = [
 
 export default function ComplianceSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="compliance">
       <div className={styles.container}>
 
         {/* Header */}

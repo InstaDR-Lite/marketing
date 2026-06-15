@@ -21,6 +21,7 @@ export default function Footer() {
             <ul className={styles.colLinks}>
               <Link href="/#workflow">Workflow</Link>
               <Link href="/#video">Video Engine</Link>
+              <Link href="/#compliance">Compliance</Link>
               <Link href="/#billing">Billing</Link>
               <Link href="/#pricing">Pricing</Link>
             </ul>

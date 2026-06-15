@@ -6,7 +6,7 @@ export default function WorkflowSection() {
       <div className={styles.container}>
         <p className={styles.sectionLabel}>02 — Core Workflow</p>
         <h2 className={styles.sectionHeadline}>
-          Engineered for the Modern Practice
+          Built for the Modern Practice
         </h2>
         <p className={styles.sectionDesc}>
           Stop fighting with bloated portals. InstaRoom wraps your entire clinical
