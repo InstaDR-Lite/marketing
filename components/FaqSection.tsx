@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './FaqSection.module.scss';
+import Link from 'next/link';
 
 const faqs = [
   {
@@ -115,7 +116,9 @@ export default function FaqSection() {
           <span className={styles.ctaText}>
             Still have questions? We answer within one business day.
           </span>
-          <button className={styles.ctaBtn}>contact us</button>
+          <button className={styles.ctaBtn}>
+            <Link href="mailto:rupesh@instaroom.link">contact us</Link>
+          </button>
         </div>
       </div>
     </section>
