@@ -140,7 +140,7 @@ export default function ComplianceSection() {
           {PILLARS.map(({ Icon, title, desc }) => (
             <div key={title} className={styles.pillar}>
               <div className={styles.pillarIcon}>
-                <Icon size={14} />
+                <Icon size={15} />
               </div>
               <div className={styles.pillarTitle}>{title.toUpperCase()}</div>
               <p className={styles.pillarDesc}>{desc}</p>
