@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import styles from './Security.module.scss';
 
-import { MapPin, Video, Lock, User, CreditCard, ShieldCheck, FileSignature, Database, CheckCircle } from 'lucide-react';
+import { MapPin, Video, Lock, CreditCard, ShieldCheck, FileSignature } from 'lucide-react';
 
 const TRUST_SIGNALS = [
   {
