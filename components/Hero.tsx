@@ -77,22 +77,13 @@ export default function Hero() {
         </button>
       </div>
 
-       <Image
-          src="/dashboard-preview.jpg"
-          alt="InstaRoom Dashboard"
-          width={900}
-        height={900}
-        style={{
-            objectFit: 'cover',
-            borderRadius: '12px',
-          boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)', 
-          margin: '32px 0',
-          height: 'auto',
-          width: '100%',
-            maxWidth: '900px',
-        }}
-          // className="w-full border border-[rgba(0,80,40,0.18)]"
-          priority
+      <Image
+        src="/screenshots/dashboard-preview.jpg"
+        alt="InstaRoom Dashboard"
+        width={1200}
+        height={687}
+        className={styles.heroImg}
+        priority
       />
       
       {/* <div className={styles.statsStrip}>

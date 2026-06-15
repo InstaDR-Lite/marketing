@@ -66,10 +66,10 @@ export default function VideoSection() {
             LIVE SESSION
           </div>
           <Image
-            src="/screenshots/session-view.png"
+            src="/screenshots/session-view.jpg"
             alt="InstaRoom video session"
-            width={640}
-            height={480}
+            width={1200}
+            height={750}
             className={styles.screenshot}
             priority
           />

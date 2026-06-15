@@ -8,6 +8,17 @@
   padding: 8rem 2rem 6rem;
   overflow: hidden;
   text-align: center;
+
+  .heroImg {
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 32px 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 100%;
+    max-width: 940px;
+  }
 }
 
 // ─── Background geometry ───────────────────────────────────────────────────
@@ -148,7 +159,7 @@
   gap: 0.5rem;
   height: 52px;
   padding: 0 2rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   background: var(--color-teal);
   color: var(--color-bg);
   font-family: var(--font-body);
@@ -174,7 +185,7 @@
   gap: 0.5rem;
   height: 52px;
   padding: 0 2rem;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   border: 1px solid var(--color-border-2);
   color: var(--color-text-primary);
   font-family: var(--font-body);
