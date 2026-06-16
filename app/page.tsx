@@ -7,7 +7,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import PricingSection from '@/components/PricingSection';
 import Footer from '@/components/Footer';
 import FaqSection from '@/components/FaqSection';
-import ComplianceSection from '@/components/ComplianceSection';
+import ComplianceSection from '@/components/compliance/ComplianceSection';
 // import FeaturesStrip from '@/components/FeaturesStrip';
 
 export default function Home() {
