@@ -33,7 +33,7 @@ export default function PricingSection() {
     <section className={styles.section} id="pricing">
       <div className={styles.container}>
         <div className={styles.header}>
-          <p className={styles.sectionLabel}>06 — Pricing</p>
+          <p className={styles.sectionLabel}>07 — Pricing</p>
           <h2 className={styles.headline}>
             One plan. Everything included.
           </h2>
