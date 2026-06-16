@@ -33,6 +33,7 @@ export default function Footer() {
               <li><a href="/about">About</a></li>
               <li><a href="/security">Security</a></li>
               <li><a href="/hipaa">HIPAA Compliance</a></li>
+              <li><a href="/baa">BAA</a></li>
               <li><a href="mailto:rupesh@instadr.link">Contact</a></li>
             </ul>
           </div>
@@ -45,7 +46,6 @@ export default function Footer() {
           <div className={styles.legal}>
             <a href="/privacy">Privacy Policy</a>
             <a href="/terms">Terms of Service</a>
-            <a href="/baa">BAA</a>
           </div>
         </div>
       </div>

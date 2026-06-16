@@ -53,9 +53,10 @@ const TECH_DETAILS = [
     title: 'Data in Transit',
     body:  <>All data encrypted via <code>TLS 1.2+</code>. API endpoints served exclusively over <code>HTTPS</code>. WebSocket signaling over <code>WSS</code>. Cloudflare proxies API traffic with DDoS protection.</>
   },
+  // Inside your Security Features component or Accordion list
   {
-    title: 'Data at Rest',
-    body:  <>Provider and appointment data stored in encrypted <code>Postgres</code> on Neon (us-east-2). Payment data never stored — handled entirely by Stripe. No PHI stored in video infrastructure.</>
+    title: "Data at Rest",
+    body: "Provider and appointment data stored in an encrypted Postgres cluster. All inactive data is encrypted using a hardware-accelerated XTS-AES-256 block cipher at the storage layer, managed through secure enterprise key management infrastructure with automated rotation policies."
   },
   {
     title: 'Payments & Payouts',
