@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
+// import Hero from '@/components/Hero';
 import WorkflowSection from '@/components/WorkflowSection';
 import VideoSection from '@/components/VideoSection';
 import BillingSection from '@/components/BillingSection';
@@ -8,6 +8,7 @@ import PricingSection from '@/components/PricingSection';
 import Footer from '@/components/Footer';
 import FaqSection from '@/components/FaqSection';
 import ComplianceSection from '@/components/compliance/ComplianceSection';
+import Hero from '@/components/hero/HeroSection';
 // import FeaturesStrip from '@/components/FeaturesStrip';
 
 export default function Home() {
