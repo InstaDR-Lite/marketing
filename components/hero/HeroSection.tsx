@@ -3,26 +3,58 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './HeroSection.module.scss';
 
+const SLUGS = [
+  'dr.lewis',
+  'sarah-therapy',
+  'dr-patel-cardiology',
+  'nurse.jennifer',
+  'oakland-wellness',
+  'dr.chen-psychiatry',
+];
+
+
 export default function HeroSection() {
   const [tick, setTick] = useState(0);
   const [latency, setLatency] = useState(17);
 
-  useEffect(() => {
-    const t = setInterval(() => {
-      setTick(p => p + 1);
-      setLatency(14 + Math.floor(Math.random() * 8));
-    }, 2200);
-    return () => clearInterval(t);
-  }, []);
+  const [slugIndex, setSlugIndex] = useState(0);
+  const [visible, setVisible]     = useState(true);
 
+  // useEffect(() => {
+  //   const t = setInterval(() => {
+  //     setTick(p => p + 1);
+  //     setLatency(14 + Math.floor(Math.random() * 8));
+  //   }, 2200);
+  //   return () => clearInterval(t);
+  // }, []);
+
+
+  useEffect(() => {
+      const interval = setInterval(() => {
+        setVisible(false);
+        setTimeout(() => {
+          setSlugIndex(i => (i + 1) % SLUGS.length);
+          setVisible(true);
+        }, 300);
+      }, 2500);
+      return () => clearInterval(interval);
+  }, []);  
+  
   return (
     <section className={styles.hero}>
       {/* ── top copy ── */}
-      <div className={styles.pill}>
+      {/* <div className={styles.pill}>
         <span className={styles.pillDot} />
         Private telehealth rooms for independent practitioners
-      </div>
+      </div> */}
 
+      <div className={`${styles.roomExamples} ${styles.eyebrow}`}>
+        <span className={styles.domain}>instaroom.link/</span>
+        <span className={`${styles.slug} ${visible ? styles.visible : styles.hidden}`}>
+          {SLUGS[slugIndex]}
+        </span>
+      </div>
+      
       <h1 className={styles.headline}>
         Get your permanent<br />virtual room today.
       </h1>

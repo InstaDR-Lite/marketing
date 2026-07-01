@@ -10,6 +10,51 @@
   overflow: hidden;
 }
 
+
+.roomExamples {
+  font-family: monospace;
+  // font-size: 1.1rem;
+  margin: 8px 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid rgba(12, 234, 216, 0.25);
+  border-radius: 100px;
+  background: var(--color-teal-dim);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  // letter-spacing: 0.1em;
+  // text-transform: uppercase;
+  color: var(--color-teal);
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.domain {
+  color: var(--text-muted);
+}
+
+.slug {
+  color: var(--accent);
+  transition: opacity 0.3s ease;
+  
+  &.hidden {
+    opacity: 0;
+  }
+  
+  &.visible {
+    opacity: 1;
+  }
+}
+
 // ─── PILL ────────────────────────────────────────────────────────────────────
 
 .pill {
@@ -39,13 +84,16 @@
 
 .headline {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  line-height: 0.96;
+  letter-spacing: -0.055em;
   color: var(--color-text-primary);
   max-width: 820px;
   margin-bottom: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 // ─── SUB ─────────────────────────────────────────────────────────────────────
@@ -378,3 +426,6 @@
   from { opacity: 0.3; }
   to   { opacity: 1; }
 }
+
+
+
