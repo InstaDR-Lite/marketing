@@ -20,7 +20,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'InstaRoom — Get your permanent virtual room today',
   description:
-    'Connect with your patients in under 2 minutes. No app downloads required. Fully native web telehealth optimized for clinical performance.',
+    'The telehealth room designed around the clinical relationship—consent,\
+     safety, compliance, and getting paid—without extra admin.',
   keywords: [
     'telehealth',
     'telemedicine',
