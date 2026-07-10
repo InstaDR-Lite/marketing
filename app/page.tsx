@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 import FaqSection from '@/components/FaqSection';
 import ComplianceSection from '@/components/compliance/ComplianceSection';
 import Hero from '@/components/hero/HeroSection';
+import PublicProfileSection from '@/components/PublicProfileSection';
 // import FeaturesStrip from '@/components/FeaturesStrip';
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         {/* <FeaturesStrip /> */}
         <WorkflowSection />
         <VideoSection />
+        <PublicProfileSection />
         <BillingSection />
         <ComplianceSection />
         <FeaturesSection />

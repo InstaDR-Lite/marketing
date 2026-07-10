@@ -1,0 +1,373 @@
+// ─── SECTION ────────────────────────────────────────────────────────────────
+
+.section {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg);
+  padding: 7rem 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-teal);
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.sub {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 640px;
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+// ─── TWO COLUMNS ────────────────────────────────────────────────────────────
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ─── LEFT — PROFILE CARD ────────────────────────────────────────────────────
+
+.profileCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-2);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.profileNav {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.profileLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileLogoBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--color-border-2);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.profileLogoText {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--color-text-secondary);
+}
+
+.profileBlock {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profileLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.profileName {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profileBadge {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--color-teal);
+  font-family: var(--font-mono);
+}
+
+.profileSpecialty {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-teal);
+}
+
+.profileStatus {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-teal);
+}
+
+.statusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-teal);
+  box-shadow: 0 0 6px var(--color-teal-glow);
+  flex-shrink: 0;
+}
+
+.profileLicense {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.profileDetail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.detailKey {
+  color: var(--color-text-muted);
+}
+
+.detailVal {
+  color: var(--color-text-primary);
+}
+
+.profileTags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 4px 0;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border-2);
+  border-radius: 2px;
+  padding: 3px 8px;
+  letter-spacing: 0.04em;
+}
+
+.bookBtn {
+  margin: 0 20px;
+  padding: 14px;
+  border: 1px solid var(--color-teal);
+  background: transparent;
+  color: var(--color-teal);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background var(--transition);
+  border-radius: 2px;
+
+  &:hover {
+    background: var(--color-teal-dim);
+  }
+}
+
+.orDivider {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  padding: 12px 0;
+  position: relative;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 24px);
+    height: 1px;
+    background: var(--color-border);
+  }
+  &::before { left: 20px; }
+  &::after { right: 20px; }
+}
+
+.waitingText {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.waitingInput {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border-2);
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-muted);
+  outline: none;
+}
+
+.waitingBtn {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--color-border-2);
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-top: 8px;
+  transition: border-color var(--transition), color var(--transition);
+
+  &:hover {
+    border-color: var(--color-teal);
+    color: var(--color-teal);
+  }
+}
+
+.profileFooter {
+  padding: 12px 20px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  border-top: 1px solid var(--color-border);
+}
+
+// ─── RIGHT — SETTINGS PANEL ─────────────────────────────────────────────────
+
+.settingsPanel {
+  padding: 8px 0 0 24px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.settingsTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+}
+
+.settingsSub {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 28px;
+}
+
+.settingsCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-2);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.settingsRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+}
+
+.settingsDivider {
+  height: 1px;
+  background: var(--color-border);
+}
+
+.settingsLabel {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.settingsKey {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.settingsVal {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-teal);
+}
+
+.settingsBadgePublic {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--color-teal);
+  border: 1px solid var(--color-teal);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.settingsBadgeGreen {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-success);
+}
