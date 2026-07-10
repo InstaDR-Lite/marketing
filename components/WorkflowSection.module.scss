@@ -14,7 +14,7 @@
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 1.5rem;
 
   @media (max-width: 720px) {
