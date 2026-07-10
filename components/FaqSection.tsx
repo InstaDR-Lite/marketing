@@ -117,7 +117,7 @@ export default function FaqSection() {
             Still have questions? We answer within one business day.
           </span>
           <button className={styles.ctaBtn}>
-            <Link href="mailto:rupesh@instaroom.link">contact us</Link>
+            <Link href="mailto:rupesh@getinstaroom.com">contact us</Link>
           </button>
         </div>
       </div>

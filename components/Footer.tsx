@@ -34,7 +34,7 @@ export default function Footer() {
               <li><a href="/security">Security</a></li>
               <li><a href="/hipaa">HIPAA Compliance</a></li>
               <li><a href="/baa">BAA</a></li>
-              <li><a href="mailto:rupesh@instadr.link">Contact</a></li>
+              <li><a href="mailto:rupesh@getinstaroom.com">Contact</a></li>
             </ul>
           </div>
         </div>

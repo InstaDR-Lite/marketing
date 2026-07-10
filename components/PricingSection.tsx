@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from './PricingSection.module.scss';
 import { CreditCard, Zap, ShieldCheck } from 'lucide-react';
+import Link from 'next/link';
 
 const soloFeatures = [
   '1 Permanent Room Link (instaroom.link/your-name)',
@@ -115,7 +116,11 @@ export default function PricingSection() {
                 </li>
               ))}
             </ul>
-            <button className={styles.btnOutline}>Join Waitlist</button>
+            <button className={styles.btnOutline}>
+              <Link href='https://forms.gle/pG7NNt4JZn1TZjvY6' target='_blank'>
+                Join Waitlist
+              </Link>
+            </button>
           </div>
         </div>
 
