@@ -44,7 +44,7 @@ export default function BillingSection() {
 
         {/* Right: text */}
         <div className={styles.text}>
-          <p className={styles.sectionLabel}>04 — Financial Velocity</p>
+          <p className={styles.sectionLabel}>05 — Financial Velocity</p>
           <h2 className={styles.headline}>
             Frictionless<br />Direct Billing
           </h2>

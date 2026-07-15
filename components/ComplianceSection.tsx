@@ -61,7 +61,7 @@ export default function ComplianceSection() {
 
         {/* Header */}
         <div className={styles.eyebrow}>
-          🔒 05 — DATA & VIDEO PERIMETER
+          🔒 06 — HIPAA COMPLIANCE
         </div>
 
         <div className={styles.header}>

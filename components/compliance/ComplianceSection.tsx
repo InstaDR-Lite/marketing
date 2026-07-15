@@ -272,7 +272,7 @@ export default function ComplianceSection() {
     <section className={styles.section} id="compliance">
       <div className={styles.container}>
 
-        <div className={styles.eyebrow}>🔒 05 — DATA & VIDEO PERIMETER</div>
+        <div className={styles.eyebrow}>🔒 06 — HIPAA COMPLIANCE</div>
 
         <div className={styles.header}>
           <div>

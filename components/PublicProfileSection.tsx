@@ -6,7 +6,7 @@ export default function PublicProfileSection() {
       <div className={styles.container}>
 
         {/* Header */}
-        <div className={styles.eyebrow}>PUBLIC ROOM PROFILE</div>
+        <div className={styles.eyebrow}>04 - PUBLIC ROOM PROFILE</div>
         <h2 className={styles.headline}>A front door for every<br />independent practice.</h2>
         <p className={styles.sub}>
           Patients can book an available slot, check in when it&apos;s time, or recover their InstaRoom

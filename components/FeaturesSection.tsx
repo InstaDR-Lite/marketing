@@ -27,7 +27,7 @@ export default function FeaturesSection() {
     <section className={styles.section} id="features">
       <div className={styles.container}>
         <div className={styles.header}>
-          <p className={styles.sectionLabel}>06 — Infrastructure</p>
+          <p className={styles.sectionLabel}>07 — Infrastructure</p>
           <h2 className={styles.headline}>
             Practice Management &<br />Core Infrastructure
           </h2>
