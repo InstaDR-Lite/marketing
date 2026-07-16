@@ -72,7 +72,7 @@ export default function FaqSection() {
     <section className={styles.section} id="faq">
       <div className={styles.container}>
         <div className={styles.header}>
-          <p className={styles.sectionLabel}>faq</p>
+          <p className={styles.sectionLabel}>09 - faq</p>
           <h2 className={styles.headline}>
             Questions providers ask<span className="cursor" />
           </h2>

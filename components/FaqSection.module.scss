@@ -25,7 +25,7 @@
   align-items: center;
   gap: 0.5rem;
 
-  &::before { content: '//'; color: var(--color-text-muted); }
+  // &::before { content: '0'; color: var(--color-text-muted); }
 }
 
 .headline {

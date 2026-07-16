@@ -3,7 +3,7 @@
 .section {
   border-top: 1px solid var(--color-border);
   background: var(--color-bg);
-  padding: 80px 24px;
+  padding: 10rem 24px;
 }
 
 .container {
@@ -15,7 +15,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 12px;
+  // padding: 4px 12px;
   // border: 1px solid var(--color-border);
   border-radius: 2px;
   font-family: var(--font-mono);
@@ -40,14 +40,14 @@
 .headline {
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
 
   span {
     color: var(--color-teal);
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
@@ -425,15 +425,16 @@
 
 .pillarTitle {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 13px;
   color: var(--color-text-primary);
   letter-spacing: 0.06em;
   margin-bottom: 8px;
+  font-weight: 700;
 }
 
 .pillarDesc {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.6;
   color: var(--color-text-secondary);

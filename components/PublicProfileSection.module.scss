@@ -2,8 +2,9 @@
 
 .section {
   border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   background: var(--color-bg);
-  padding: 7rem 24px;
+  padding: 10rem 24px;
 }
 
 .container {

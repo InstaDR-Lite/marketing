@@ -1,5 +1,5 @@
 .section {
-  padding: 7rem 2rem;
+  padding: 10rem 2rem;
   position: relative;
 
   &::before {
@@ -222,7 +222,7 @@
     width: 36px; height: 36px;
     border-radius: 8px;
     background: var(--color-teal-dim);
-    border: 1px solid rgba(12, 234, 216, 0.2);
+    // border: 1px solid rgba(12, 234, 216, 0.2);
     display: grid;
     place-items: center;
     flex-shrink: 0;

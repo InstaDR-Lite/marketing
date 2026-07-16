@@ -63,32 +63,34 @@ export default function PricingSection() {
         <div className={styles.cards}>
           {/* Solo */}
           <div className={styles.cardFeatured}>
-            <span className={styles.popularTag}>Most Popular</span>
-            <p className={styles.planLabelFeatured}>Independent Practitioner</p>
-            <div className={styles.price}>
-              <span className={styles.currency}>$</span>
-              <span className={styles.amount}>
-                {billing === 'monthly' ? '79' : '599'}
-              </span>
-              <span className={styles.period}>
-                {billing === 'monthly' ? ' / month' : ' / year'}
-              </span>
+            <div>
+              <span className={styles.popularTag}>Most Popular</span>
+              <p className={styles.planLabelFeatured}>Independent Practitioner</p>
+              <div className={styles.price}>
+                <span className={styles.currency}>$</span>
+                <span className={styles.amount}>
+                  {billing === 'monthly' ? '79' : '599'}
+                </span>
+                <span className={styles.period}>
+                  {billing === 'monthly' ? ' / month' : ' / year'}
+                </span>
+              </div>
+              {/* {billing === 'annual' && (
+                <p className={styles.annualNote}>$49.92/mo — save $349 vs monthly</p>
+              )} */}
+              <p className={styles.priceSub}>
+                Everything you need to run a modern independent practice from day one.
+              </p>
+              <div className={styles.divider} />
+              <ul className={styles.featureList}>
+                {soloFeatures.map((f) => (
+                  <li key={f}>
+                    <span className={styles.checkmark}>✓</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
             </div>
-            {/* {billing === 'annual' && (
-              <p className={styles.annualNote}>$49.92/mo — save $349 vs monthly</p>
-            )} */}
-            <p className={styles.priceSub}>
-              Everything you need to run a modern independent practice from day one.
-            </p>
-            <div className={styles.divider} />
-            <ul className={styles.featureList}>
-              {soloFeatures.map((f) => (
-                <li key={f}>
-                  <span className={styles.checkmark}>✓</span>
-                  {f}
-                </li>
-              ))}
-            </ul>
             <button className={styles.btnCta} onClick={handleClaim}>
               Claim Your Room →
             </button>
@@ -96,26 +98,29 @@ export default function PricingSection() {
 
           {/* Clinic */}
           <div className={styles.card}>
-            <p className={styles.planLabel}>Clinic</p>
-            <div className={styles.price}>
-              <span className={styles.amount} style={{ fontSize: '2rem', color: 'var(--color-text-primary)' }}>
-                $599
-              </span>
-              <span className={styles.period}> / month</span>
+            <div>
+              <p className={styles.planLabel}>Clinic</p>
+
+              <div className={styles.price}>
+                <span className={styles.amount} style={{  color: 'var(--color-text-primary)' }}>
+                  $599
+                </span>
+                <span className={styles.period}> / month</span>
+              </div>
+              <p className={styles.priceSub}>
+                For small group practices. Up to 10 providers, centralized admin.
+
+              </p>
+              <div className={styles.divider} />
+              <ul className={styles.featureList}>
+                {groupFeatures.map((f) => (
+                  <li key={f}>
+                    <span className={styles.checkmark}>✓</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className={styles.priceSub}>
-              For small group practices. Up to 10 providers, centralized admin.
-              <br /><strong>Coming June 2026.</strong>
-            </p>
-            <div className={styles.divider} />
-            <ul className={styles.featureList}>
-              {groupFeatures.map((f) => (
-                <li key={f}>
-                  <span className={styles.checkmark}>✓</span>
-                  {f}
-                </li>
-              ))}
-            </ul>
             <button className={styles.btnOutline}>
               <Link href='https://forms.gle/pG7NNt4JZn1TZjvY6' target='_blank'>
                 Join Waitlist
@@ -137,15 +142,16 @@ export default function PricingSection() {
             </span>
             Go live in 5 minutes
           </div>
-          <div className={styles.trustItem}>
-            <span className={styles.trustIcon}>✕</span>
-            Cancel anytime
-          </div>
+          
           <div className={styles.trustItem}>
             <span className={styles.trustIcon}>
               <ShieldCheck size={14} color='var(--color-teal)'/>
             </span>
             HIPAA-ready
+          </div>
+          <div className={styles.trustItem}>
+            <span className={styles.trustIcon}>✕</span>
+            Cancel anytime
           </div>
         </div>
       </div>
