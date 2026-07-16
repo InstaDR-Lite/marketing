@@ -277,8 +277,8 @@ export default function ComplianceSection() {
         <div className={styles.header}>
           <div>
             <h2 className={styles.headline}>
-              Immutable Call Rows.<br />
-              <span>Built-In Compliance.</span>
+              Built-In Compliance.<br />
+              <span>Immutable Call Logs.</span>
             </h2>
           </div>
           <p className={styles.subhead}>
