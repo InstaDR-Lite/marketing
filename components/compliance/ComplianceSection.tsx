@@ -280,7 +280,6 @@ export default function ComplianceSection() {
               Immutable Call Rows.<br />
               <span>Built-In Compliance.</span>
             </h2>
-            <div className={styles.comingSoon}>⚡ EMRLite — Coming Q3 2026</div>
           </div>
           <p className={styles.subhead}>
             Consent, identity, and stream data lock together seamlessly
