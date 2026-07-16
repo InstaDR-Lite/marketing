@@ -1,6 +1,7 @@
 import styles from './BillingSection.module.scss';
 import { DollarSign, CreditCard } from 'lucide-react';
 
+
 const recentPayouts = [
   { initials: 'SL', name: 'Sarah L.', time: '2 min ago', amount: '+$75' },
   { initials: 'MK', name: 'Marcus K.', time: '18 min ago', amount: '+$120' },
