@@ -12,7 +12,7 @@ export default function Footer() {
               <span>InstaRoom</span>
             </div>
             <p>
-              Your permanent clinical room. Your room. Your patients. Your terms.
+              Your permanent clinical room. Your room. Your Practice. Your Terms.
             </p>
           </div>
 

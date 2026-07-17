@@ -182,7 +182,7 @@
     cursor: pointer;
     transition: all var(--transition);
 
-    &::before { content: '$ '; }
+    // &::before { content: ' >  '; }
 
     &:hover {
       background: var(--color-teal);
