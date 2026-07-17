@@ -9,10 +9,10 @@ const faqs = [
     q: 'Do my patients need to download an app?',
     a: '<strong>No.</strong> That\'s the whole point. Your patient taps the link you send them and the call opens natively inside Safari or Chrome — on any device. Zero installs, zero friction, zero support calls from patients who can\'t figure out the app.',
   },
-  {
-    q: 'How is InstaRoom different from doxy.me?',
-    a: 'doxy.me is a video tool with clinical features bolted on. <strong>InstaRoom is built around the clinical relationship, not the video call.</strong> That means geo-verification before the call connects, consent flows built in, recurring billing tied to appointments, and direct Stripe payouts with zero cuts — not afterthoughts, not add-ons.',
-  },
+  // {
+  //   q: 'How is InstaRoom different from doxy.me?',
+  //   a: 'doxy.me is a video tool with clinical features bolted on. <strong>InstaRoom is built around the clinical relationship, not the video call.</strong> That means geo-verification before the call connects, consent flows built in, recurring billing tied to appointments, and direct Stripe payouts with zero cuts — not afterthoughts, not add-ons.',
+  // },
   {
     q: 'What does "permanent room link" mean?',
     a: 'You get one link. It\'s yours forever. Send it to every patient, put it in your email signature, add it to your Psychology Today profile. Patients always know where to find you. <strong>No generating a new link for every session.</strong> No expiring URLs. No confusion.',
@@ -45,12 +45,12 @@ const faqs = [
     q: 'Is InstaRoom HIPAA compliant?',
     a: 'The platform is architected for HIPAA compliance — <strong>no clinical data or session metadata is stored on our servers.</strong> Patient communication channels run completely isolated. We sign a BAA with all providers. That said, HIPAA compliance is a shared responsibility — your workflows and device security matter too.',
   },
+  // {
+  //   q: 'Can I share files during a session?',
+  //   a: '<strong>Yes.</strong> You can upload files during a call — lab results, prescriptions, referral letters — and your patient can download them immediately. Files are stored on encrypted infrastructure with signed URLs and are accessible for 30 days post-session. A download link is also included in the post-session follow-up email.',
+  // },
   {
-    q: 'Can I share files during a session?',
-    a: '<strong>Yes.</strong> You can upload files during a call — lab results, prescriptions, referral letters — and your patient can download them immediately. Files are stored on encrypted infrastructure with signed URLs and are accessible for 30 days post-session. A download link is also included in the post-session follow-up email.',
-  },
-  {
-    q: 'What is the $49/month plan and what does it include?',
+    q: 'What is the $79/month plan and what does it include?',
     a: 'Everything an independent practitioner needs to run a modern virtual practice: <strong>one permanent white-labeled room link, calendar-led dashboard, geo-verification, direct Stripe payouts, SendGrid email notifications, and unlimited video minutes</strong> powered by MediaDance. No hidden fees, no per-session charges, no percentage of your revenue.',
   },
   {
