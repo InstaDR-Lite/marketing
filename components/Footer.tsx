@@ -8,7 +8,7 @@ export default function Footer() {
         <div className={styles.top}>
           <div className={styles.brand}>
             <div className={styles.logoWrap}>
-              <div className={styles.logoMark}>IR</div>
+              <div className={styles.logoMark}>iR</div>
               <span>InstaRoom</span>
             </div>
             <p>

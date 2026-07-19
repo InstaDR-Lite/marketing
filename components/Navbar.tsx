@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <div className={styles.logoMark}>
-          <span>IR</span>
+          <span>iR</span>
         </div>
         <span className={styles.logoText}>
           InstaRoom
