@@ -1,0 +1,117 @@
+.section {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  padding: 120px 24px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-teal);
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+  max-width: 480px;
+  margin-bottom: 80px;
+}
+
+// ─── STEPS ───────────────────────────────────────────────────────────────────
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  position: relative;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+.step {
+  position: relative;
+  padding-right: 48px;
+
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.stepNumber {
+  font-family: var(--font-mono);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  color: var(--color-teal);
+  opacity: 0.15;
+  line-height: 1;
+  margin-bottom: 24px;
+  letter-spacing: -0.04em;
+}
+
+.connector {
+  position: absolute;
+  top: 2.2rem;
+  right: 0;
+  width: 48px;
+  height: 1px;
+  background: var(--color-border-2);
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: -3px;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid var(--color-border-2);
+    border-top: 1px solid var(--color-border-2);
+    transform: rotate(45deg);
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.stepContent {
+  padding-right: 24px;
+
+  @media (max-width: 768px) {
+    padding-right: 0;
+  }
+}
+
+.stepTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.stepBody {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
