@@ -22,7 +22,7 @@ export default function HowItWorksSection() {
   return (
     <section className={styles.section} id="how-it-works">
       <div className={styles.container}>
-        <div className={styles.eyebrow}>HOW IT WORKS</div>
+        <div className={styles.eyebrow}>01 - HOW IT WORKS</div>
         <h2 className={styles.headline}>Three steps to your permanent room.</h2>
 
         <div className={styles.steps}>
