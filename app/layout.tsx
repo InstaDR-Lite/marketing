@@ -19,9 +19,13 @@ const geistMono = Geist_Mono({
 
 const fraunces = Fraunces({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  // 1. Critical: Set weight to 'variable' to allow custom axes
+  weight: 'variable', 
   variable: '--font-fraunces',
   display: 'swap',
+  // 2. Critical: Explicitly include the custom variable axes 
+  // (opsz = optical size, SOFT = softness, WONK = wonky/chiseled characters)
+  axes: ['opsz'], 
 });
 
 export const metadata: Metadata = {
