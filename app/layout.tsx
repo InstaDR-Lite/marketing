@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist_Mono, Geist } from 'next/font/google';
+import { Geist_Mono, Geist, Fraunces } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import '../styles/globals.scss';
 
@@ -14,6 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-geist-mono',
+  display: 'swap',
+});
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-fraunces',
   display: 'swap',
 });
 
@@ -46,7 +53,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${geistMono.variable}`}
+      className={`${geist.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}
     >
       <body>
         <ThemeProvider>
