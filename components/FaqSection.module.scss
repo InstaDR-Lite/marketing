@@ -181,7 +181,7 @@
     text-transform: uppercase;
     cursor: pointer;
     transition: all var(--transition);
-
+    border-radius: 3px;
     // &::before { content: ' >  '; }
 
     &:hover {
