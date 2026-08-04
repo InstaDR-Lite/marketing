@@ -47,7 +47,8 @@ export default function BillingSection() {
         <div className={styles.text}>
           <p className={styles.sectionLabel}>05 — Financial Velocity</p>
           <h2 className={styles.headline}>
-            Frictionless<br />Direct Billing
+            Frictionless Payments. <br />
+            <span>Instant Revenue.</span>
           </h2>
           <p className={styles.desc}>
             We completely removed the middleman. Your billing is tied directly to

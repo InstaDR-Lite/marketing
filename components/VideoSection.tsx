@@ -11,7 +11,7 @@ export default function VideoSection() {
         <div className={styles.text}>
           <p className={styles.sectionLabel}>03 — VIDEO EXPERIENCE</p>
           <h2 className={styles.headline}>
-            HD Video.<br />Native Browser.
+            Zero Installs. Zero Onboarding Lag.
           </h2>
           <p className={styles.desc}>
             No plugins. No downloads. No friction.

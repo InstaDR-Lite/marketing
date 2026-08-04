@@ -11,6 +11,7 @@ import ComplianceSection from '@/components/compliance/ComplianceSection';
 import Hero from '@/components/hero/HeroSection';
 import PublicProfileSection from '@/components/PublicProfileSection';
 import HowItWorksSection from '@/components/howitworks/HowItWorks';
+import CTASection from '@/components/cta/CTASection';
 // import FeaturesStrip from '@/components/FeaturesStrip';
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <FeaturesSection />
         <PricingSection />
         <FaqSection />
+        <CTASection />
       </main>
       <Footer />
     </>

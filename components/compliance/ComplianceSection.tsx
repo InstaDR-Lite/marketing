@@ -277,8 +277,8 @@ export default function ComplianceSection() {
         <div className={styles.header}>
           <div>
             <h2 className={styles.headline}>
-              Built-In Compliance.<br />
-              <span>Immutable Call Logs.</span>
+              All the Utility of an EMR.<br />
+              <span>None of the Lock-In.</span>
             </h2>
           </div>
           <p className={styles.subhead}>
