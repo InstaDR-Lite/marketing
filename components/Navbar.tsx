@@ -33,7 +33,7 @@ export default function Navbar() {
           className={styles.ctaButton}
           onClick={() => window.location.href = '/#pricing'}
         >
-          Claim Your Room →
+          Claim Your Room
         </button>
       </div>
     </nav>
