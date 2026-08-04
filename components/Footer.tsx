@@ -20,7 +20,7 @@ export default function Footer() {
             <p className={styles.colTitle}>Product</p>
             <ul className={styles.colLinks}>
               <Link href="/#workflow">Workflow</Link>
-              <Link href="/#video">Video Engine</Link>
+              <Link href="/#video">Video Experience</Link>
               <Link href="/#compliance">Compliance</Link>
               <Link href="/#billing">Billing</Link>
               <Link href="/#pricing">Pricing</Link>

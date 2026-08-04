@@ -220,3 +220,63 @@
   color: var(--color-success);
   flex-shrink: 0;
 }
+
+.toolStackContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.toolStackLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+.toolStack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  @media (max-width: 540px) {
+    gap: 6px;
+  }
+}
+
+.toolBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-border-2);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all var(--transition);
+
+  svg {
+    color: var(--color-teal);
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    border-color: var(--color-teal-glow);
+    color: var(--color-text-primary);
+    background: var(--color-teal-dim);
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 540px) {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+}
