@@ -17,8 +17,8 @@ export const CTASection: React.FC<CTASectionProps> = ({
   description = "Stop renting temporary meeting links from corporate software. Build your practice on a platform designed exclusively for independent care.",
   primaryCtaText = "Claim Your Room",
   primaryCtaHref = "https://www.getinstaroom.com/#pricing",
-  secondaryCtaText = "Watch Demo",
-  secondaryCtaHref = "https://www.getinstaroom.com/demo",
+  secondaryCtaText = "Sign In",
+  secondaryCtaHref = "https://instaroom.link/login",
 }) => {
   return (
     <section className={styles.cta}>
