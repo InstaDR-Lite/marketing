@@ -66,7 +66,7 @@ export default function VideoSection() {
             LIVE SESSION
           </div>
           <Image
-            src="/screenshots/session-view.jpg"
+            src="/easy-connecting.jpg"
             alt="InstaRoom video session"
             width={1200}
             height={750}
