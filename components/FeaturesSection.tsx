@@ -29,11 +29,10 @@ export default function FeaturesSection() {
         <div className={styles.header}>
           <p className={styles.sectionLabel}>07 — Infrastructure</p>
           <h2 className={styles.headline}>
-            Practice Management &<br />Core Infrastructure
+            Clinical Security & Privacy by Default.
           </h2>
           <p className={styles.desc}>
-            Every component engineered for clinical performance, compliance,
-            and complete practitioner independence.
+            Built on dedicated clinical infrastructure designed to protect your practice, maintain compliance, and safeguard patient trust.
           </p>
         </div>
 
