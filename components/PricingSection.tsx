@@ -39,7 +39,7 @@ export default function PricingSection() {
             One plan. Everything included.
           </h2>
           <p className={styles.desc}>
-            14-day free trial. No surprises. Cancel anytime.
+            Try 1 month free. No surprises. Cancel anytime.
           </p>
 
           {/* Billing toggle */}
@@ -134,7 +134,7 @@ export default function PricingSection() {
             <span className={styles.trustIcon}>
               <CreditCard size={14} color='var(--color-teal)'/>
             </span>
-            14-day free trial
+            Try 1 month free
           </div>
           <div className={styles.trustItem}>
             <span className={styles.trustIcon}>
