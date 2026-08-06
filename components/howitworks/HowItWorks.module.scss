@@ -1,11 +1,12 @@
 .section {
   background: var(--color-bg);
   border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   padding: 120px 24px;
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -15,17 +16,20 @@
   color: var(--color-teal);
   letter-spacing: 0.12em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .headline {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
   max-width: 480px;
-  margin-bottom: 80px;
+  display: block;
+  margin: 10px auto 80px;
+  text-align: center;
 }
 
 // ─── STEPS ───────────────────────────────────────────────────────────────────
