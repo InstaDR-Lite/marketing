@@ -13,7 +13,7 @@ interface CTASectionProps {
 }
 
 export const CTASection: React.FC<CTASectionProps> = ({
-  title = "Own Your Clinical Space",
+  title = "Start today - own your clinical space.",
   description = "Stop renting temporary meeting links from corporate software. Build your practice on a platform designed exclusively for independent care.",
   primaryCtaText = "Claim Your Room",
   primaryCtaHref = "https://www.getinstaroom.com/#pricing",
