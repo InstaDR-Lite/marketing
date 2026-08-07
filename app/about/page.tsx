@@ -132,7 +132,7 @@ export default function AboutPage() {
         </div>
 
         <p className={styles.contact}>
-          Questions? <a href="mailto:hello@instaroom.link">hello@instaroom.link</a>
+          Questions? <a href="mailto:rupesh@getinstaroom.com">rupesh@getinstaroom.com</a>
           <br />
           <span>San Francisco, CA · 2026</span>
         </p>
