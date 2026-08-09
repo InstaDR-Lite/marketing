@@ -65,7 +65,7 @@ export default function BillingSection() {
                 <h4>Bring Your Own Stripe (BYOS)</h4>
                 <p>
                   Connect your existing Stripe account in 30 seconds. Co-pays and session fees
-                  route directly to your bank account with 0% platform fees. Your practice, your money.
+                  route directly to your bank account with a minimal 2% convenience fee. Your practice, your money.
                 </p>
               </div>
             </div>
