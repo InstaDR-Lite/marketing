@@ -71,7 +71,7 @@ export default function HeroSection() {
         <Image
           src="/hero-dash.png"
           alt="InstaRoom dashboard"
-          width={104˝˝0}
+          width={1040}
           height={650}
           className={styles.heroDash}
           priority
