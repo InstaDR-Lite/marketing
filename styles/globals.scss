@@ -49,7 +49,7 @@
   --color-teal-dark:   #066E7A;
 
   --color-text-primary:   #0D1828;
-  --color-text-secondary: #132339;
+  --color-text-secondary: #5f6368;
   --color-text-muted:     #8A9BB0;
 
   --color-white:       #FFFFFF;
@@ -80,6 +80,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   transition: background 0.3s ease, color 0.3s ease;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 a {

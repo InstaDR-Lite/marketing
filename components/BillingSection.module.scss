@@ -17,7 +17,7 @@
   max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.25fr;
   gap: 5rem;
   align-items: center;
 
@@ -198,7 +198,7 @@
 
 
 .desc {
-  font-size: 1rem;
+  // font-size: 1rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
   margin-bottom: 2.5rem;
@@ -229,7 +229,7 @@
   .featureText {
     h4 {
       font-family: var(--font-mono);
-      font-size: 0.95rem;
+      // font-size: 0.95rem;
       font-weight: 700;
       letter-spacing: -0.01em;
       color: var(--color-text-primary);
@@ -237,7 +237,7 @@
     }
 
     p {
-      font-size: 0.875rem;
+      // font-size: 1rem;
       color: var(--color-text-secondary);
       line-height: 1.6;
     }

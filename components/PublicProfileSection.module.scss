@@ -39,8 +39,8 @@
 
 .sub {
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 300;
+  // font-size: 15px;
+  // font-weight: 300;
   line-height: 1.7;
   color: var(--color-text-secondary);
   max-width: 640px;
@@ -314,8 +314,7 @@
 
 .settingsSub {
   font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 1rem;
   line-height: 1.7;
   color: var(--color-text-secondary);
   margin-bottom: 28px;

@@ -69,7 +69,7 @@ export default function PricingSection() {
               <div className={styles.price}>
                 <span className={styles.currency}>$</span>
                 <span className={styles.amount}>
-                  {billing === 'monthly' ? '79' : '599'}
+                  {billing === 'monthly' ? '49' : '499'}
                 </span>
                 <span className={styles.period}>
                   {billing === 'monthly' ? ' / month' : ' / year'}

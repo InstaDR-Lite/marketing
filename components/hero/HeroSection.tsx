@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import styles from './HeroSection.module.scss';
+import Image from 'next/image';
 
 const SLUGS = [
   'dr.lewis',
@@ -65,6 +66,17 @@ export default function HeroSection() {
         or enterprise overhead.
       </p>
 
+
+      <div>
+        <Image
+          src="/hero-dash.png"
+          alt="InstaRoom dashboard"
+          width={900}
+          height={560}
+          className={styles.heroDash}
+          priority
+        />
+      </div>
       <div className={styles.ctas}>
         <a href="#pricing" className={styles.ctaPrimary}>Claim Your Room →</a>
         <a href="/demo" className={styles.ctaSecondary}>

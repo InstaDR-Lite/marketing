@@ -164,10 +164,28 @@
   color: var(--color-teal);
 }
 
+.heroDash {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 12px;
+  // border: 1px solid #999999;
+  background: #0A0F1A;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 32px 80px rgba(0,0,0,0.15),
+    // var(--shadow-glow);
+}
+
 // ─── MOCKUP ──────────────────────────────────────────────────────────────────
 
 .mockup {
+  
+  display: none;
   width: 100%;
+
   max-width: 900px;
   border-radius: 12px 12px 0 0;
   border: 1px solid var(--color-border-2);

@@ -7,7 +7,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.75fr;
+  grid-template-columns: 1fr 1.25fr;
   gap: 64px;
   align-items: center;
 
@@ -40,7 +40,7 @@
 }
 
 .desc {
-  font-size: 15px;
+  // font-size: 15px;
   line-height: 1.7;
   color: var(--color-text-secondary);
   max-width: 440px;
@@ -75,14 +75,14 @@
 .featureText {
   h4 {
     font-family: var(--font-mono);
-    font-size: 13px;
+    // font-size: 13
     color: var(--color-text-primary);
     margin-bottom: 4px;
     letter-spacing: 0.02em;
   }
 
   p {
-    font-size: 13px;
+    // font-size: 1rem;
     line-height: 1.6;
     color: var(--color-text-secondary);
   }

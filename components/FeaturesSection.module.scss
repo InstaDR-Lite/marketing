@@ -6,7 +6,7 @@
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -37,9 +37,8 @@
 }
 
 .desc {
-  font-size: 1rem;
   color: var(--color-text-secondary);
-  max-width: 480px;
+  max-width: 640px;
   margin: 0 auto;
   line-height: 1.7;
 }
@@ -88,7 +87,6 @@
 
 .featureTitle {
   font-family: var(--font-mono);
-  font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--color-text-primary);
@@ -96,7 +94,6 @@
 }
 
 .featureDesc {
-  font-size: 0.875rem;
   color: var(--color-text-secondary);
   line-height: 1.65;
 }
