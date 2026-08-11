@@ -264,7 +264,7 @@ function AuditRow({ label, value }: { label: string; value: string }) {
 // ─── MAIN COMPONENT ─────────────────────────────────────────────────────────
 
 export default function ComplianceSection() {
-  const [openRow, setOpenRow] = useState<string>('');
+  const [openRow, setOpenRow] = useState<string>('CR-00412');
 
   const toggle = (id: string) => setOpenRow(prev => prev === id ? '' : id);
 
