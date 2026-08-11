@@ -92,7 +92,7 @@ export default function PricingSection() {
               </ul>
             </div>
             <button className={styles.btnCta} onClick={handleClaim}>
-              Claim Your Room →
+              Claim Your Room
             </button>
           </div>
 

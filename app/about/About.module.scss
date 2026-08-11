@@ -15,7 +15,7 @@
 
 .headline {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
   color: var(--color-text-primary);
   line-height: 1.1;
@@ -27,10 +27,10 @@
 }
 
 .lead {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   color: var(--color-text-secondary);
-  max-width: 560px;
+  // max-width: 560px;
   margin-bottom: 48px;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .founderNote p {
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.7;
   color: var(--color-text-secondary);
 }
@@ -71,8 +71,8 @@
 }
 
 .founderAvatar {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--color-border-2);
@@ -111,11 +111,12 @@
 // Values
 .sectionTitle {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--color-teal);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 24px;
+  font-weight: 900;
 }
 
 .valuesGrid {
@@ -142,20 +143,21 @@
 }
 
 .valueIcon {
-  font-size: 20px;
+  // font-size: 78px;
   margin-bottom: 4px;
 }
 
 .valueTitle {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 14px;
   color: var(--color-text-primary);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .valueDesc {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
   color: var(--color-text-secondary);
 }
@@ -194,7 +196,7 @@
 }
 
 .mdDesc {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--color-text-secondary);
 }
@@ -231,7 +233,7 @@
 
 // Contact
 .contact {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--color-text-muted);
   line-height: 1.8;
 
@@ -241,6 +243,6 @@
 
   span {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 13px;
   }
 }

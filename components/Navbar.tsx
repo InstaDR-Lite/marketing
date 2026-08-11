@@ -30,10 +30,17 @@ export default function Navbar() {
         </div> */}
         <ThemeToggle />
         <button 
-          className={styles.ctaButton}
+          className={styles.ctaSecondary}
           onClick={() => window.location.href = '/#pricing'}
         >
           Claim Your Room
+        </button>
+        <button 
+          className={styles.ctaButton}
+        >
+          <Link href="https://instaroom.link/login" target="_blank" rel="noopener noreferrer">
+            Sign in
+          </Link>
         </button>
       </div>
     </nav>
