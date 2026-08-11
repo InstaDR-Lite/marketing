@@ -14,7 +14,7 @@ export default function Navbar() {
             <svg xmlns="http://www.w3.org/2000/svg" width="130" height="auto" viewBox="0 0 300 75" fontFamily="Geist, Arial, sans-serif" fontWeight="800" fontSize="44">
               <text x="0" y="55" fill="currentColor">insta</text>
               <circle cx="124" cy="42" r="9" fill="#1E9AA0"></circle>
-              <text x="138" y="55" fill="currentColor">room</text>
+              <text x="142" y="55" fill="currentColor">room</text>
             </svg> 
           </div>
         </Link>
