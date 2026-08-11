@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import styles from './Navbar.module.scss';
 import ThemeToggle from './ThemeToggle';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
@@ -10,12 +11,19 @@ export default function Navbar() {
       <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
         <Link href="/">
           <div className={styles.logo}>
-            <div className={styles.logoMark}>
+            <Image
+              src="/logo/instaroom-logo-horizontal.svg"
+              alt="InstaRoom Logo"
+              width={130}
+              height={0}
+              style={{ height: 'auto' }}
+            />  
+            {/* <div className={styles.logoMark}>
                 <span>IR</span>
             </div>
             <span className={styles.logoText}>
               InstaRoom
-            </span>
+            </span> */}
           </div>
         </Link>
         <ul className={styles.navLinks}>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './Footer.module.scss';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,8 +9,13 @@ export default function Footer() {
         <div className={styles.top}>
           <div className={styles.brand}>
             <div className={styles.logoWrap}>
-              <div className={styles.logoMark}>iR</div>
-              <span>InstaRoom</span>
+               <Image
+                src="/logo/instaroom-logo-horizontal.svg"
+                alt="InstaRoom Logo"
+                width={160}
+                height={0}
+                style={{ height: 'auto' }}
+              />
             </div>
             <p>
               Your permanent clinical room. Your room. Your Terms.

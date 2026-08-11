@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 160 120">
+<rect x="42" y="14" width="34" height="34" rx="9" fill="none" stroke="#1E9AA0" stroke-width="4"></rect>
+<rect x="80" y="32" width="34" height="34" rx="9" fill="none" stroke="#1B2A4A" stroke-width="4"></rect>
+<line x1="68" y1="35" x2="88" y2="41" stroke="#1E9AA0" stroke-width="4"></line>
+<text x="80" y="98" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="26" fill="#1B2A4A">InstaRoom</text>
+</svg>
