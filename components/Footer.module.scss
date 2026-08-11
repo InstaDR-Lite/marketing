@@ -27,19 +27,8 @@
     align-items: center;
     gap: 0.6rem;
     margin-bottom: 1rem;
-
-    .logoMark {
-      width: 30px; height: 30px;
-      border-radius: 3px;
-      border: 2px solid var(--color-teal);
-      display: grid;
-      place-items: center;
-      font-family: var(--font-display);
-      font-weight: 800;
-      font-size: 0.75rem;
-      color: var(--color-text-secondary);
-      letter-spacing: -0.02em;
-    }
+    color: var(--color-text-primary);
+    line-height: 1;
 
     span {
       font-family: var(--font-display);

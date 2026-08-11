@@ -8,15 +8,13 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <div className={styles.logoWrap}>
-               <Image
-                src="/logo/instaroom-logo-horizontal.svg"
-                alt="InstaRoom Logo"
-                width={160}
-                height={0}
-                style={{ height: 'auto' }}
-              />
-            </div>
+            <div className={styles.logo} >
+            <svg xmlns="http://www.w3.org/2000/svg" width="160" height="auto" viewBox="0 0 300 75" fontFamily="Geist, Arial, sans-serif" fontWeight="800" fontSize="44">
+              <text x="0" y="55" fill="currentColor">insta</text>
+              <circle cx="124" cy="42" r="9" fill="#1E9AA0"></circle>
+              <text x="140" y="55" fill="currentColor">room</text>
+            </svg> 
+          </div>
             <p>
               Your virtual room. Your patients. Your Terms.
             </p>
@@ -48,7 +46,7 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <span className={styles.copy}>
-            © {new Date().getFullYear()} InstaRoom. All rights reserved.
+            © {new Date().getFullYear()} InstaRoom. | <Link href="https://instadr.xyz" target="_blank" rel="noopener noreferrer">An InstaDR company</Link>  . | All rights reserved.
           </span>
           <div className={styles.legal}>
             <a href="/privacy">Privacy Policy</a>

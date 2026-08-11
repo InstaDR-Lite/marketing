@@ -10,20 +10,12 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
         <Link href="/">
-          <div className={styles.logo}>
-            <Image
-              src="/logo/instaroom-logo-horizontal.svg"
-              alt="InstaRoom Logo"
-              width={130}
-              height={0}
-              style={{ height: 'auto' }}
-            />  
-            {/* <div className={styles.logoMark}>
-                <span>IR</span>
-            </div>
-            <span className={styles.logoText}>
-              InstaRoom
-            </span> */}
+          <div className={styles.logo} >
+            <svg xmlns="http://www.w3.org/2000/svg" width="130" height="auto" viewBox="0 0 300 75" fontFamily="Geist, Arial, sans-serif" fontWeight="800" fontSize="44">
+              <text x="0" y="55" fill="currentColor">insta</text>
+              <circle cx="124" cy="42" r="9" fill="#1E9AA0"></circle>
+              <text x="138" y="55" fill="currentColor">room</text>
+            </svg> 
           </div>
         </Link>
         <ul className={styles.navLinks}>
