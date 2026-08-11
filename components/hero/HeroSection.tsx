@@ -57,7 +57,7 @@ export default function HeroSection() {
       </div>
       
       <h1 className={styles.headline}>
-        Get your own virtual room today.
+        Get your virtual room today.
       </h1>
 
       <p className={styles.sub}>
