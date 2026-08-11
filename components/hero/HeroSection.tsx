@@ -57,7 +57,7 @@ export default function HeroSection() {
       </div>
       
       <h1 className={styles.headline}>
-        Get your permanent<br />virtual room today.
+        Get your own virtual room today.
       </h1>
 
       <p className={styles.sub}>
@@ -73,7 +73,7 @@ export default function HeroSection() {
           alt="InstaRoom dashboard"
           width={1040}
           height={650}
-          className={styles.heroDash}
+          className={styles.heroImg}
           priority
         />
       </div>

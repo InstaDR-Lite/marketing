@@ -18,7 +18,7 @@ export default function Footer() {
               />
             </div>
             <p>
-              Your permanent clinical room. Your room. Your Terms.
+              Your virtual room. Your patients. Your Terms.
             </p>
           </div>
 
