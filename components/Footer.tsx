@@ -19,22 +19,23 @@ export default function Footer() {
           <div>
             <p className={styles.colTitle}>Product</p>
             <ul className={styles.colLinks}>
-              <Link href="/#workflow">Workflow</Link>
-              <Link href="/#video">Video Experience</Link>
-              <Link href="/#compliance">Compliance</Link>
-              <Link href="/#billing">Billing</Link>
-              <Link href="/#pricing">Pricing</Link>
+              <li><Link href="/#workflow">
+                Workflow</Link></li>
+              <li><Link href="/#video">Video Experience</Link></li>
+              <li><Link href="/#compliance">Compliance</Link></li>
+              <li><Link href="/#billing">Billing</Link></li>
+              <li><Link href="/#pricing">Pricing</Link></li>
             </ul>
           </div>
 
           <div>
             <p className={styles.colTitle}>Company</p>
             <ul className={styles.colLinks}>
-              <li><a href="/about">About</a></li>
-              <li><a href="/security">Security</a></li>
-              <li><a href="/hipaa">HIPAA Compliance</a></li>
-              <li><a href="/baa">BAA</a></li>
-              <li><a href="mailto:rupesh@getinstaroom.com">Contact</a></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/security">Security</Link></li>
+              <li><Link href="/hipaa">HIPAA Compliance</Link></li>
+              <li><Link href="/baa">BAA</Link></li>
+              <li><Link href="mailto:rupesh@getinstaroom.com">Contact</Link></li>
             </ul>
           </div>
         </div>
