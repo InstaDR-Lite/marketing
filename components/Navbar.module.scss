@@ -61,7 +61,7 @@
   .ctaButton {
     height: 38px;
     padding: 0 1.25rem;
-    border-radius: 3px;
+    border-radius: var( --radius-pill);
     background: var(--color-teal);
     color: var(--color-bg);
     font-family: var(--font-body);
@@ -83,12 +83,11 @@
       align-items: center;
       gap: 8px;
       padding: 12px 20px;
-      background: var(--color-surface-2);
-      color: var(--color-text-primary);
+      color: var(--color-teal);
       font-family: var(--font-body);
       font-size: 14px;
-      font-weight: 500;
-      border-radius: 3px;
+      font-weight: 700;
+      border-radius: var( --radius-pill);
       transition: all var(--transition);
       border: 1px solid var(--color-border-2);
       transition: background var(--transition);

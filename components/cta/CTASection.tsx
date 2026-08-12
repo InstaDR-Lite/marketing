@@ -90,7 +90,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
               </Link>
 
               {secondaryCtaText && (
-                <Link href={secondaryCtaHref} className={styles.secondaryBtn}>
+                <Link target="_blank" rel="noopener noreferrer" href={secondaryCtaHref} className={styles.secondaryBtn}>
                   {secondaryCtaText}
                 </Link>
               )}
