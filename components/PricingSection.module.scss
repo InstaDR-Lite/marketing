@@ -17,7 +17,7 @@
 }
 
 .container {
-  max-width: 800px;
+  max-width: 11˝00px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -40,11 +40,14 @@
 .headline {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--color-text-primary);
   line-height: 1.1;
+  margin: 0 auto;
   margin-bottom: 1rem;
+  max-width: 600px;
+  text-align: center;
 }
 
 .desc {
@@ -57,11 +60,11 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   align-items: start;
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     max-width: 440px;
     margin: 0 auto;

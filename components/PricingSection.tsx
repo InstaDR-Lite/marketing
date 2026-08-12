@@ -14,7 +14,15 @@ const soloFeatures = [
   'Patient virtual waiting room',
 ];
 
-const groupFeatures = [
+const clinic = [
+  'Up to 10 permanent room links',
+  'Centralized admin dashboard',
+  'Multi-provider scheduling',
+  'Dedicated MediaDance signaling',
+  'Priority infrastructure support',
+];
+
+const clinicPro = [
   'Up to 10 permanent room links',
   'Centralized admin dashboard',
   'Multi-provider scheduling',
@@ -36,7 +44,7 @@ export default function PricingSection() {
         <div className={styles.header}>
           <p className={styles.sectionLabel}>08 — Pricing</p>
           <h2 className={styles.headline}>
-            One plan. Everything included.
+            Simple pricing for every stage of your practice.
           </h2>
           <p className={styles.desc}>
             Try 1 month free. No surprises. Cancel anytime.
@@ -55,7 +63,7 @@ export default function PricingSection() {
               className={billing === 'annual' ? styles.toggleActive : styles.toggleInactive}
             >
               Annual
-              <span className={styles.saveBadge}>Save $349</span>
+              {/* <span className={styles.saveBadge}>Save $349</span> */}
             </button>
           </div>
         </div>
@@ -64,12 +72,12 @@ export default function PricingSection() {
           {/* Solo */}
           <div className={styles.cardFeatured}>
             <div>
-              <span className={styles.popularTag}>Most Popular</span>
+              {/* <span className={styles.popularTag}>Most Popular</span> */}
               <p className={styles.planLabelFeatured}>Independent Practitioner</p>
               <div className={styles.price}>
                 <span className={styles.currency}>$</span>
                 <span className={styles.amount}>
-                  {billing === 'monthly' ? '49' : '499'}
+                  {billing === 'monthly' ? '49' : '399'}
                 </span>
                 <span className={styles.period}>
                   {billing === 'monthly' ? ' / month' : ' / year'}
@@ -103,17 +111,17 @@ export default function PricingSection() {
 
               <div className={styles.price}>
                 <span className={styles.amount} style={{  color: 'var(--color-text-primary)' }}>
-                  $599
+                  $199
                 </span>
                 <span className={styles.period}> / month</span>
               </div>
               <p className={styles.priceSub}>
-                For small group practices. Up to 10 providers, centralized admin.
+                For small group practices. Up to 5 providers, centralized admin.
 
               </p>
               <div className={styles.divider} />
               <ul className={styles.featureList}>
-                {groupFeatures.map((f) => (
+                {clinic.map((f) => (
                   <li key={f}>
                     <span className={styles.checkmark}>✓</span>
                     {f}
@@ -127,7 +135,41 @@ export default function PricingSection() {
               </Link>
             </button>
           </div>
+
+          {/* Clinic */}
+          <div className={styles.card}>
+            <div>
+              <p className={styles.planLabel}>Clinic Pro</p>
+
+              <div className={styles.price}>
+                <span className={styles.amount} style={{  color: 'var(--color-text-primary)' }}>
+                  $399
+                </span>
+                <span className={styles.period}> / month</span>
+              </div>
+              <p className={styles.priceSub}>
+                For small group practices. Up to 10 providers, centralized admin.
+
+              </p>
+              <div className={styles.divider} />
+              <ul className={styles.featureList}>
+                {clinicPro.map((f) => (
+                  <li key={f}>
+                    <span className={styles.checkmark}>✓</span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <button className={styles.btnOutline}>
+              <Link href='https://forms.gle/pG7NNt4JZn1TZjvY6' target='_blank'>
+                Join Waitlist
+              </Link>
+            </button>
         </div>
+
+        </div>
+
 
         <div className={styles.trustStrip}>
           <div className={styles.trustItem}>

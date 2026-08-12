@@ -29,7 +29,7 @@ export default function FeaturesSection() {
         <div className={styles.header}>
           <p className={styles.sectionLabel}>07 — Infrastructure</p>
           <h2 className={styles.headline}>
-            Clinical Security & Privacy by Default.
+            Clinical Security, Compliance, and Privacy by Default.
           </h2>
           <p className={styles.desc}>
             Built on dedicated clinical infrastructure designed to protect your practice, maintain compliance, and safeguard patient trust.
