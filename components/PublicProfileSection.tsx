@@ -21,8 +21,11 @@ export default function PublicProfileSection() {
             {/* Nav */}
             <div className={styles.profileNav}>
               <div className={styles.profileLogo}>
-                <span className={styles.profileLogoBox}>IR</span>
-                <span className={styles.profileLogoText}>INSTAROOM</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="24" viewBox="0 0 300 75" fontFamily="Geist, Arial, sans-serif" fontWeight="800" fontSize="44">
+                  <text x="0" y="55" fill="currentColor">insta</text>
+                  <circle cx="124" cy="42" r="9" fill="#1E9AA0"></circle>
+                  <text x="138" y="55" fill="currentColor">room</text>
+                </svg>
               </div>
             </div>
 
@@ -42,6 +45,10 @@ export default function PublicProfileSection() {
 
             {/* Details */}
             <div className={styles.profileBlock}>
+
+              <div className={styles.profileDetail} style={{ marginBottom: '12px' }}>
+                I particularly love diving into exposure therapy with folks who are looking to expand their capacity to be kind to themselves while they experience challenging thoughts, emotions, and sensations ... more
+              </div>
               <div className={styles.profileDetail}>
                 <span className={styles.detailKey}>// hours:</span>
                 <span className={styles.detailVal}>Mon–Fri, 9am–5pm</span>
@@ -98,13 +105,13 @@ export default function PublicProfileSection() {
 
             <div className={styles.settingsCard}>
               <div className={styles.settingsRow}>
-                <span className={styles.settingsLabel}>Settings / Room</span>
+                <span className={styles.settingsLabel}>Room</span>
                 <span className={styles.settingsBadgePublic}>PUBLIC</span>
               </div>
               <div className={styles.settingsDivider} />
               <div className={styles.settingsRow}>
                 <span className={styles.settingsKey}>Public slug</span>
-                <span className={styles.settingsVal}>/sarah-therapy</span>
+                <span className={styles.settingsVal}>instaroom.link/sarah-therapy</span>
               </div>
               <div className={styles.settingsDivider} />
               <div className={styles.settingsRow}>
