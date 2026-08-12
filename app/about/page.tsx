@@ -1,10 +1,11 @@
 'use client';
-import { Link, Zap, Video, User } from 'lucide-react';
+import { Link,  Zap, Video, User } from 'lucide-react';
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import styles from './About.module.scss';
 import Image from 'next/image';
+
 
 const VALUES = [
   {
@@ -109,7 +110,7 @@ export default function AboutPage() {
             <div className={styles.mdEyebrow}>// infrastructure</div>
             <div className={styles.mdTitle}>Built on MediaDance</div>
             <p className={styles.mdDesc}>
-              InstaRoom runs on MediaDance — our own native WebRTC 
+              InstaRoom runs on <b><a href="https://telehealth-marketing.vercel.app/" target="_blank" rel="noopener noreferrer">MediaDance</a></b>  — our own native WebRTC 
               real-time infrastructure. Every session is encrypted, 
               peer-to-peer, and built for clinical performance. 
               Not Twilio. Not Daily. Ours.
