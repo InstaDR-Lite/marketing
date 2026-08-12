@@ -9,8 +9,8 @@ export default function PublicProfileSection() {
         <div className={styles.eyebrow}>04 - PUBLIC ROOM PROFILE</div>
         <h2 className={styles.headline}>Your Practice. Your Terms.</h2>
         <p className={styles.sub}>
-          Patients can book an available slot, check in when it&apos;s time, or recover their InstaRoom
-          link from the practitioner&apos;s public profile.
+          A permanent front door for your practice.
+          Clients book, check in, or enter your room—no lost email links, no app downloads.
         </p>
 
         {/* Two column layout */}
@@ -30,17 +30,20 @@ export default function PublicProfileSection() {
             </div>
 
             {/* Provider info */}
-            <div className={styles.profileBlock}>
-              <div className={styles.profileLabel}>// PROVIDER</div>
-              <div className={styles.profileName}>
-                Sarah Flanders <span className={styles.profileBadge}>MFT</span>
+            <div className={styles.profileBlock} style={{ flexDirection: 'row', alignItems: 'center', gap: '1rem' }}>
+              <div className={styles.profileAvatar}>
               </div>
-              <div className={styles.profileSpecialty}>Startup founders</div>
-              <div className={styles.profileStatus}>
-                <span className={styles.statusDot} />
-                accepting telehealth visits
+              <div>
+                <div className={styles.profileName}>
+                  Sarah Flanders <span className={styles.profileBadge}>MFT</span>
+                </div>
+                <div className={styles.profileSpecialty}>Startup founders</div>
+                <div className={styles.profileStatus}>
+                  <span className={styles.statusDot} />
+                  accepting telehealth visits
+                </div>
+                <div className={styles.profileLicense}>Licensed in: CA</div>
               </div>
-              <div className={styles.profileLicense}>Licensed in: CA</div>
             </div>
 
             {/* Details */}
@@ -97,9 +100,11 @@ export default function PublicProfileSection() {
 
           {/* ── Right — settings panel ── */}
           <div className={styles.settingsPanel}>
-            <h3 className={styles.settingsTitle}>Everything lives in the Room Tab.</h3>
+            <h3 className={styles.settingsTitle}>
+              Everything you need to manage your public profile in one place
+            </h3>
             <p className={styles.settingsSub}>
-              Practitioners control the public profile, booking availability, and public
+              Control your public profile, booking availability, and public
               slug from one settings surface — no separate website builder required.
             </p>
 
