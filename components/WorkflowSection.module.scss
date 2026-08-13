@@ -48,7 +48,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   gap: 1.5rem;
 
   @media (max-width: 720px) {
@@ -70,7 +70,7 @@
 }
 
 .cardVisual {
-  height: 220px;
+  // height: 220px;
   background: var(--color-surface-2);
   border-bottom: 1px solid var(--color-border);
   display: flex;
@@ -79,6 +79,7 @@
   position: relative;
   overflow: hidden;
 
+  padding: 24px;
   .mockDashboard {
     width: 85%;
     display: flex;
@@ -116,7 +117,7 @@
   }
 
   .mockGeoCard {
-    width: 85%;
+    width: 95%;
     padding: 1rem;
     background: var(--color-surface-3);
     border: 1px solid var(--color-border-2);
@@ -184,7 +185,7 @@
   }
 
   p {
-    // font-size: 1rem;
+    font-size: 1rem;
     color: var(--color-text-secondary);
     line-height: 1.65;
   }

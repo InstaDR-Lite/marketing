@@ -4,7 +4,7 @@ const STEPS = [
   {
     number: '01',
     title: 'Claim your room',
-    body: 'Sign up and get instaroom.link/dr-lewis. Insta-setup. Yours forever.',
+    body: 'Sign up and get instaroom.link/[your-practice]. Insta-setup. Yours forever.',
   },
   {
     number: '02',
@@ -13,7 +13,7 @@ const STEPS = [
   },
   {
     number: '03',
-    title: 'Just show up',
+    title: 'Show up to your room',
     body: 'Consent, payment, and compliance handled before you say hello.',
   },
 ];

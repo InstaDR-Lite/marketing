@@ -22,11 +22,15 @@ export default function WorkflowSection() {
                 <div className={styles.mockRow} />
                 <div className={styles.mockRow} />
                 <div className={styles.mockRow} />
+                <div className={styles.mockRow} />
+                <div className={styles.mockRow} />
+                <div className={styles.mockRow} />
+                <div className={styles.mockRow} />
                 <div className={styles.mockCalendar}>
-                  {[...Array(10)].map((_, i) => (
+                  {[...Array(25)].map((_, i) => (
                     <div
                       key={i}
-                      className={`${styles.mockSlot} ${[1, 4, 7].includes(i) ? styles.active : ''}`}
+                      className={`${styles.mockSlot} ${[0, 3,   16, 20,23, ].includes(i) ? styles.active : ''}`}
                     />
                   ))}
                 </div>
@@ -43,6 +47,7 @@ export default function WorkflowSection() {
           </div>
 
           {/* Card 2: Geo Verification */}
+          <div style={{ display: "flex", flexDirection: "column", gap: '24px'}}>
           <div className={styles.card}>
             <div className={styles.cardVisual}>
               <div className={styles.mockGeoCard}>
@@ -56,11 +61,27 @@ export default function WorkflowSection() {
             <div className={styles.cardBody}>
               <h3>Instant Geo-Verification</h3>
               <p>
-                Cross-border compliance handled silently. The moment a patient enters
-                your waiting queue, their physical jurisdiction is securely verified—
-                ensuring peace of mind before the call even connects.
+                Silent cross-border telemetry checks provider license, patient location, and room policy before the session opens.
               </p>
             </div>
+          </div>
+           <div className={styles.card}>
+            <div className={styles.cardVisual}>
+              <div className={styles.mockGeoCard}>
+                <div className={styles.geoInfo}>
+                    <div className={styles.geoSatus}>
+                      instaroom.link/sarah-therapy
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.cardBody}>
+              <h3>One permanent link</h3>
+              <p>
+                Send one link forever. InstaRoom handles room state, patient readiness, and post-call accounting.
+              </p>
+            </div>
+          </div>
           </div>
         </div>
       </div>
