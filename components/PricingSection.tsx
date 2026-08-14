@@ -15,7 +15,8 @@ const soloFeatures = [
 ];
 
 const clinic = [
-  'Up to 10 permanent room links',
+  'Up 5 permanent rooms',
+  'Unlimited HD video sessions',
   'Centralized admin dashboard',
   'Multi-provider scheduling',
   'Dedicated MediaDance signaling',
@@ -23,7 +24,8 @@ const clinic = [
 ];
 
 const clinicPro = [
-  'Up to 10 permanent room links',
+  'Up to 10 permanent rooms',
+  'Unlimited HD video sessions',
   'Centralized admin dashboard',
   'Multi-provider scheduling',
   'Dedicated MediaDance signaling',
