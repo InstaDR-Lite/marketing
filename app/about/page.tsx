@@ -42,14 +42,14 @@ export default function AboutPage() {
           Built for the<br />
           <span>independent practitioner.</span>
         </h1>
-        <p className={styles.lead}>
+        {/* <p className={styles.lead}>
           InstaRoom is a permanent telehealth room platform for therapists, 
           nurse practitioners, specialists, and family medicine providers. 
           One link. Every client. Any device.
-        </p>
+        </p> */}
 
         {/* Founder note */}
-        <div className={styles.founderNote}>
+        {/* <div className={styles.founderNote}>
           <div className={styles.founderIcon}>// founder</div>
           <p>
            After watching 
@@ -87,6 +87,56 @@ export default function AboutPage() {
                 </svg>
               </a>
             </div>
+          </div>
+        </div> */}
+
+        {/* Replace or expand your current // founder block */}
+        <div className={styles.mission}>
+          <span className={styles.sectionTitle}>// OUR MISSION</span>
+          <blockquote className={styles.missionQuote}>
+            “Every independent clinician deserves a telehealth room as trustworthy and permanent as their office door — so care never breaks for the sake of a broken link.”
+          </blockquote>
+
+          <div className={styles.bodyText}>
+            <p>
+              <b>What we&apos;re building</b><br/>
+              InstaRoom is a HIPAA-ready video platform built exclusively for independent practioners, and small group practices. We give every clinician a single, white-labeled room that patients can join instantly from any browser without downloading apps or chasing down new links every week.
+            </p>
+
+            <p>
+              <b>Where we&apos;re headed</b><br/>
+              We&apos;re heading toward a future where session technology becomes invisible. Patients click a familiar bookmark, enter a trusted room, and focus on care — while state verification, digital consent, and compliance audit logs happen silently in the background.
+            </p>
+
+            <p>
+              Independent practitioners shouldn&apos;t have to borrow clunky infrastructure built for enterprise hospitals or sales teams. InstaRoom provides tools shaped around the actual rhythm of private practice, ensuring the smallest solo clinic has access to the same calm, dependable online presence as a large healthcare group.
+            </p>
+          </div>
+          <div className={styles.founderSig}>
+            <Image  
+              src="/rupesh-pandey.jpg" // Place your avatar image inside /public folder
+              alt="Rupesh Pandey" 
+              className={styles.founderAvatar}
+              width={80}
+              height={80}
+            />
+            <span><strong>Rupesh Pandey</strong> · Founder, InstaRoom</span>
+            <a 
+                href="https://www.linkedin.com/in/rp2701" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.linkedinLink}
+                aria-label="Rupesh Pandey LinkedIn Profile"
+              >
+                <svg 
+                  width="32" 
+                  height="32" 
+                  viewBox="0 0 24 24" 
+                  fill="currentColor"
+                >
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.6a1.4 1.4 0 1 0 1.4 1.4 1.4 1.4 0 0 0-1.4-1.4z" />
+                </svg>
+              </a>
           </div>
         </div>
 

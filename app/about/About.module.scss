@@ -1,5 +1,5 @@
 .page {
-  max-width: 800px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 7rem 24px;
 }
@@ -47,6 +47,20 @@
   gap: 12px;
 }
 
+.mission {
+  margin-top: 2rem;
+
+  .missionQuote {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.45;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin: 20px 0 40px 0;
+    padding-left: 20px;
+    border-left: 3px solid #10b981;
+  }
+}
+
 .founderIcon {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -60,11 +74,17 @@
   color: var(--color-text-secondary);
 }
 
+.bodyText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .founderSig {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 16px;
+  margin: 16px 0 4rem;
   font-family: var(--font-body);
   font-size: 0.9375rem;
   color: var(--color-text-secondary);
@@ -77,6 +97,7 @@
   object-fit: cover;
   border: 1px solid var(--color-border-2);
   flex-shrink: 0;
+  margin-top: 1rem;
 }
 
 .founderDetails {
