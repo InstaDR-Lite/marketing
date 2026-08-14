@@ -27,7 +27,7 @@ export default function VideoSection() {
               <div className={styles.featureText}>
                 <h4>Zero-Install</h4>
                 <p>
-                  Client taps the link → session opens in Safari or Chrome.
+                  Client joins room, session opens in Safari or Chrome.
                   Nothing to download. Ever.
                 </p>
               </div>
@@ -52,7 +52,7 @@ export default function VideoSection() {
                 <h4>Built on MediaDance</h4>
                 <p>
                   Our own real-time video infrastructure.
-                  Peer-to-peer, encrypted, built for clinical performance.
+                  Peer-to-peer, secure and HIPAA-compliant, built for superior clinical experience.
                 </p>
               </div>
             </div>
