@@ -5,20 +5,20 @@ import { Zap, Video, Proportions } from 'lucide-react';
 export default function VideoSection() {
   return (
     <section className={styles.section} id="video">
+      <div className={styles.intro}>
+        <p className={styles.sectionLabel}>03 — VIDEO EXPERIENCE</p>
+        <h2 className={styles.headline}>
+          Video sessions that work like magic. 
+        </h2>
+        <p className={styles.desc}>
+          No plugins. No downloads. No friction.
+        </p>
+      </div>
       <div className={styles.container}>
+
 
         {/* Left — copy */}
         <div className={styles.text}>
-          <p className={styles.sectionLabel}>03 — VIDEO EXPERIENCE</p>
-          <h2 className={styles.headline}>
-            Video sessions that work like magic. 
-          </h2>
-          <p className={styles.desc}>
-            No plugins. No downloads. No friction.
-            Built on MediaDance — our own WebRTC infrastructure.
-
-          </p>
-
           <div className={styles.features}>
             <div className={styles.feature}>
               <div className={styles.featureIcon}>
