@@ -2,39 +2,49 @@
 
 import { useState } from 'react';
 import styles from './PricingSection.module.scss';
-import { CreditCard, Zap, ShieldCheck } from 'lucide-react';
-import Link from 'next/link';
 
-const soloPractice = [
-  '1 permanent room link (instaroom.link/your-name)',
-  'Unlimited HD video sessions',
-  'Calendar + Google Calendar sync',
-  'Direct Stripe payouts — 2% platform fee',
-  'Geo-verification + digital consent',
-  'Patient virtual waiting room',
-  'Export session records in PDF, CSV, or FHIR',
+
+import { 
+  Link, 
+  Video, 
+  Calendar, 
+  CreditCard, 
+  ShieldCheck, 
+  Users, 
+  Download, 
+  Building2, 
+  LayoutDashboard, 
+  Zap, 
+  Sparkles, 
+  Headphones 
+} from 'lucide-react';
+
+export const soloPractice = [
+  { icon: Link, text: '1 permanent room  (instaroom.link/your-name)' },
+  { icon: Video, text: 'Unlimited HD video sessions' },
+  { icon: Calendar, text: 'Calendar + Google Calendar sync' },
+  { icon: CreditCard, text: 'Direct Stripe payouts — 2% platform fee' },
+  { icon: ShieldCheck, text: 'Geo-verification + digital consent' },
+  { icon: Users, text: 'Patient virtual waiting room' },
+  { icon: Download, text: 'Export session records in PDF, CSV, or FHIR' },
 ];
 
-const clinic = [
-  'Everything in Solo, plus:',
-  'Up to 5 permanent rooms included',
-  '$29/mo per additional clinician room',
-  'Unlimited HD video sessions',
-  'Centralized admin & audit dashboard',
-  'Multi-provider scheduling',
-  'Dedicated MediaDance signaling',
-  'Priority support & onboarding',
+export const clinic = [
+  { icon: Sparkles, text: 'Everything in Solo, plus:' },
+  { icon: Building2, text: 'Up to 5 permanent rooms included' },
+  { icon: Users, text: '$29/mo per additional clinician room' },
+  { icon: LayoutDashboard, text: 'Centralized admin & audit dashboard' },
+  { icon: Calendar, text: 'Multi-provider scheduling' },
+  { icon: Zap, text: 'Dedicated MediaDance signaling' },
+  { icon: Headphones, text: 'Priority support & onboarding' },
 ];
 
-const clinicPro = [
-  'Up to 10 permanent rooms included',
-  '$29/mo per additional clinician room',
-  'Unlimited HD video sessions',
-  'Centralized admin & audit dashboard',
-  'Multi-provider scheduling',
-  'Dedicated MediaDance signaling',
-  'Custom branding & white-labeling',
-  'Priority 24/7 infrastructure support',
+export const clinicPro = [
+  { icon: Sparkles, text: 'Everything in Clinic, plus:' },
+  { icon: Building2, text: 'Up to 10 permanent rooms included' },
+  { icon: Sparkles, text: 'Custom branding & white-labeling' },
+  { icon: Video, text: 'Dedicated video signalling' }, 
+  { icon: Headphones, text: 'Priority 24/7 infrastructure support' },
 ];
 
 export default function PricingSection() {
@@ -96,15 +106,18 @@ export default function PricingSection() {
                 Everything you need to run a modern independent practice from day one.
               </p>
               <div className={styles.divider} />
-              <ul className={styles.featureList}>
-                {soloPractice.map((f) => (
-                  <li key={f}>
-                    <span className={styles.checkmark}>✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                <div className={styles.featureList}>
+                  {soloPractice.map((item, index) => {
+                    const IconComponent = item.icon;
+                    return (
+                      <div key={index} className={styles.featureRow}>
+                        <IconComponent size={16} className={styles.featureIcon} />
+                        <span className={styles.featureText}>{item.text}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             <button className={styles.btnCta} onClick={handleClaim}>
               Claim Your Room
             </button>
@@ -127,15 +140,18 @@ export default function PricingSection() {
 
               </p>
               <div className={styles.divider} />
-              <ul className={styles.featureList}>
-                {clinic.map((f) => (
-                  <li key={f}>
-                    <span className={styles.checkmark}>✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
+                <div className={styles.featureList}>
+                  {clinic.map((item, index) => {
+                    const IconComponent = item.icon;
+                    return (
+                      <div key={index} className={styles.featureRow}>
+                        <IconComponent size={16} className={styles.featureIcon} />
+                        <span className={styles.featureText}>{item.text}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             <button className={styles.btnOutline}>
               <a href="mailto:rupesh@getinstaroom.com?subject=Hello">
                 Email Team
@@ -159,14 +175,19 @@ export default function PricingSection() {
 
               </p>
               <div className={styles.divider} />
-              <ul className={styles.featureList}>
-                {clinicPro.map((f) => (
-                  <li key={f}>
-                    <span className={styles.checkmark}>✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
+              <ul className="space-y-3 my-6">
+              <div className={styles.featureList}>
+                  {clinicPro.map((item, index) => {
+                    const IconComponent = item.icon;
+                    return (
+                      <div key={index} className={styles.featureRow}>
+                        <IconComponent size={16} className={styles.featureIcon} />
+                        <span className={styles.featureText}>{item.text}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+            </ul>
             </div>
             <button className={styles.btnOutline}>
               <a href="mailto:rupesh@getinstaroom.com?subject=Hello">
