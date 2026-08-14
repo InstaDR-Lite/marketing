@@ -282,8 +282,7 @@ export default function ComplianceSection() {
             </h2>
           </div>
           <p className={styles.subhead}>
-            Consent, identity, and stream data lock together seamlessly
-            on every call — no third-party compliance tool required.
+            Download call logs, consents, and session data anytime in PDF, CSV, or FHIR — ready for instant export to your EHR.
           </p>
         </div>
 

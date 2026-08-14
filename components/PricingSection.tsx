@@ -15,7 +15,7 @@ const soloFeatures = [
 ];
 
 const clinic = [
-  'Up 5 permanent rooms',
+  'Up to 5 permanent rooms',
   'Unlimited HD video sessions',
   'Centralized admin dashboard',
   'Multi-provider scheduling',
