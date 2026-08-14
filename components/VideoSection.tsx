@@ -11,7 +11,7 @@ export default function VideoSection() {
           Video sessions that work like magic. 
         </h2>
         <p className={styles.desc}>
-          No plugins. No downloads. No friction.
+          No plugins. No downloads. Zero friction.
         </p>
       </div>
       <div className={styles.container}>
