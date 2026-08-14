@@ -5,32 +5,36 @@ import styles from './PricingSection.module.scss';
 import { CreditCard, Zap, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 
-const soloFeatures = [
-  '1 Permanent Room Link (instaroom.link/your-name)',
+const soloPractice = [
+  '1 permanent room link (instaroom.link/your-name)',
   'Unlimited HD video sessions',
   'Calendar + Google Calendar sync',
-  'Direct Stripe payouts — 0% platform fee',
+  'Direct Stripe payouts — 2% platform fee',
   'Geo-verification + digital consent',
   'Patient virtual waiting room',
+  'Export session records in PDF, CSV, or FHIR',
 ];
 
 const clinic = [
-  'Up to 5 permanent rooms',
+  'Everything in Solo, plus:',
+  'Up to 5 permanent rooms included',
+  '$29/mo per additional clinician room',
   'Unlimited HD video sessions',
-  'Centralized admin dashboard',
+  'Centralized admin & audit dashboard',
   'Multi-provider scheduling',
   'Dedicated MediaDance signaling',
-  'Priority infrastructure support',
+  'Priority support & onboarding',
 ];
 
 const clinicPro = [
-  'Up to 10 permanent rooms',
+  'Up to 10 permanent rooms included',
+  '$29/mo per additional clinician room',
   'Unlimited HD video sessions',
-  'Centralized admin dashboard',
+  'Centralized admin & audit dashboard',
   'Multi-provider scheduling',
   'Dedicated MediaDance signaling',
-  'Custom branding + white-labeling',
-  'Priority infrastructure support',
+  'Custom branding & white-labeling',
+  'Priority 24/7 infrastructure support',
 ];
 
 export default function PricingSection() {
@@ -72,10 +76,10 @@ export default function PricingSection() {
 
         <div className={styles.cards}>
           {/* Solo */}
-          <div className={styles.cardFeatured}>
+          <div className={styles.card}>
             <div>
               {/* <span className={styles.popularTag}>Most Popular</span> */}
-              <p className={styles.planLabelFeatured}>Independent Practitioner</p>
+              <p className={styles.planLabel}>Independent Practitioner</p>
               <div className={styles.price}>
                 <span className={styles.currency}>$</span>
                 <span className={styles.amount}>
@@ -93,7 +97,7 @@ export default function PricingSection() {
               </p>
               <div className={styles.divider} />
               <ul className={styles.featureList}>
-                {soloFeatures.map((f) => (
+                {soloPractice.map((f) => (
                   <li key={f}>
                     <span className={styles.checkmark}>✓</span>
                     {f}
@@ -107,13 +111,14 @@ export default function PricingSection() {
           </div>
 
           {/* Clinic */}
-          <div className={styles.card}>
+          <div className={styles.cardFeatured}>
             <div>
-              <p className={styles.planLabel}>Clinic</p>
+              <span className={styles.popularTag}>Most Popular</span>
+              <p className={styles.planLabelFeatured}>Clinic</p>
 
               <div className={styles.price}>
                 <span className={styles.amount} style={{  color: 'var(--color-text-primary)' }}>
-                  $199
+                  $249
                 </span>
                 <span className={styles.period}> / month</span>
               </div>
@@ -132,9 +137,9 @@ export default function PricingSection() {
               </ul>
             </div>
             <button className={styles.btnOutline}>
-              <Link href='https://forms.gle/pG7NNt4JZn1TZjvY6' target='_blank'>
-                Join Waitlist
-              </Link>
+              <a href="mailto:rupesh@getinstaroom.com?subject=Hello">
+                Email Team
+              </a>
             </button>
           </div>
 
@@ -164,9 +169,9 @@ export default function PricingSection() {
               </ul>
             </div>
             <button className={styles.btnOutline}>
-              <Link href='https://forms.gle/pG7NNt4JZn1TZjvY6' target='_blank'>
-                Join Waitlist
-              </Link>
+              <a href="mailto:rupesh@getinstaroom.com?subject=Hello">
+                Email Team
+              </a>
             </button>
         </div>
 
