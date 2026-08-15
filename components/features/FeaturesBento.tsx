@@ -21,7 +21,7 @@ export function FeaturesBento() {
             <div className={styles.iconWrapper}>
               <Zap size={20} className={styles.icon} />
             </div>
-            <h3 className={styles.cardTitle}>Sub-45ms WebRTC, peer-to-peer first.</h3>
+            <h3 className={styles.cardTitle}>Secure, Sub-45ms WebRTC Video, peer-to-peer first</h3>
             <p className={styles.cardText}>
               A proprietary stack called <strong>MediaDance</strong> negotiates a direct connection between clinician and patient — no media ever traverses our servers in the steady state.
             </p>
@@ -66,7 +66,7 @@ export function FeaturesBento() {
 
         <div className={styles.card}>
           <div className={styles.iconWrapper}><FileCheck size={20} /></div>
-          <h3 className={styles.cardTitle}>Bound e-consent</h3>
+          <h3 className={styles.cardTitle}>Bound e-consent and Geo-Verification</h3>
           <p className={styles.cardText}>Electronic consent is cryptographically bound to the call record — admissible and immutable.</p>
         </div>
         <div className={styles.card}>
@@ -77,7 +77,7 @@ export function FeaturesBento() {
 
         <div className={styles.card}>
           <div className={styles.iconWrapper}><Lock size={20} /></div>
-          <h3 className={styles.cardTitle}>Immutable audit log</h3>
+          <h3 className={styles.cardTitle}>Immutable audit call logs</h3>
           <p className={styles.cardText}>Write-once at session close: room URL, attendees, consent, geo-check. Export as PDF or FHIR.</p>
         </div>
 
