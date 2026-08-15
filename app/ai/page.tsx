@@ -4,6 +4,7 @@ import { Brain, Shield, FileText, Sparkles } from 'lucide-react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { SessionTimeline } from '@/components/SessionTimeline/SessionTimeline';
+import PatientNoteMockup from '@/components/PatientNotesMockup/PatientNoteMockup';
 
 const LIVE_FEATURES = [
   {
@@ -77,7 +78,9 @@ export default function AIPage() {
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.sectionLabel}>// live today</div>
-          <h2 className={styles.sectionTitle}>AI built for how you actually practice.</h2>
+          <h2 className={styles.sectionTitle}>
+            AI built for how you actually practice
+          </h2>
           <div className={styles.grid3}>
             {LIVE_FEATURES.map(f => (
               <div key={f.title} className={styles.card}>
@@ -99,11 +102,11 @@ export default function AIPage() {
           <div className={styles.zennotesInner}>
             <div className={styles.zennotesLeft}>
               <div className={styles.sectionLabel}>// in development</div>
-              <h2 className={styles.zennotesTitle}>ZenNotes</h2>
+              <h2 className={styles.zennotesTitle}>AI SOAP Notes</h2>
               <p className={styles.zennotesSubtitle}>Ambient Session Documentation</p>
               <p className={styles.zennotesDesc}>
-                Stop typing notes after every session. ZenNotes listens, structures, and drafts
-                — so you can focus on the patient, not the paperwork.
+                Stop typing notes after every session.  It listens, structures, and drafts
+                SOAP notes so you can focus on the patient, not the paperwork.
               </p>
               <ul className={styles.zennotesList}>
                 <li>HIPAA-compliant from the ground up</li>
@@ -144,19 +147,17 @@ export default function AIPage() {
         </div>
       </section>
 
-      {/* Footer CTA */}
-      {/* <section className={styles.footerCta}>
-        <div className={styles.container}>
-          <h2 className={styles.footerCtaTitle}>
-            Built by practitioners, for practitioners.
-          </h2>
-          <p className={styles.footerCtaDesc}>
-            InstaRoom is built by InstaDR — a healthcare infrastructure company
-            building the tools independent practitioners deserve.
+      <section className={styles.publicSection}>
+        <div className={styles.publicText}>
+          <h2>Private and public notes. Finally!</h2>
+          <p className={styles.publicSub}>
+            Your SOAP note stays yours — <b>  encrypted, HIPAA-compliant, audit-ready</b>.
+            Your patient gets context — names, team, actionable.
+            <b> Same session. Two truths</b>. Both honored.
           </p>
-          <a href="/claim" className={styles.ctaPrimary}>Claim your room free →</a>
         </div>
-      </section> */}
+        <PatientNoteMockup />
+      </section>
       <CTASection />
       <Footer />
 

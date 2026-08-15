@@ -163,11 +163,12 @@
 
 .sectionTitle {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-  font-weight: 600;
+  font-size: clamp(1.8rem, 3.5vw, 3.2rem);
+  font-weight: 800;
   letter-spacing: -0.02em;
   margin-bottom: 48px;
   max-width: 600px;
+  line-height: 1.2;
 }
 
 // ─── GRIDS ─────────────────────────────────────────────────────────────────
@@ -286,7 +287,7 @@
 
 .zennotesTitle {
   font-family: var(--font-mono);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--color-teal);
@@ -301,11 +302,9 @@
 }
 
 .zennotesDesc {
-  font-size: 1.05rem;
   color: var(--color-text-secondary);
   line-height: 1.7;
   margin-bottom: 24px;
-  font-weight: 400;
 }
 
 .zennotesList {
@@ -406,4 +405,74 @@
   margin: 0 auto 32px;
   line-height: 1.7;
   font-weight: 400;
+}
+
+
+// ─── Public Notes Section ─────────────────────────────────────────────────────
+
+.publicSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 8rem 24px;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+
+  b {
+    font-weight: 700;
+    color: var(--color--grey2) !important;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+ 
+}
+
+.publicText {
+  h2 {
+    font-family: var(--font-mono), monospace;
+    font-size: clamp(1.8rem, 3vw, 3.2rem);
+    // font-weight: 700;
+    // color: var(--color--grey3);
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin: 0 0 1rem;
+  }
+
+  p {
+    // font-size: 1.15rem;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 540px;
+    color: var(--color-text-secondary);
+    margin-bottom: 20px;
+  }
+}
+
+.publicPhone {
+  display: flex;
+  justify-content: center;
+
+  .phoneCard {
+    width: 260px;
+    background: #fff;
+    border-radius: 32px;
+    border: 1px solid var(--color--border--1);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    aspect-ratio: 9/17;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color--grey2);
+    font-size: 0.75rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
 }
