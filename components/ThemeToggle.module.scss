@@ -36,13 +36,13 @@
 }
 
 .icon {
-  font-size: 0.7rem;
-  line-height: 1;
+  // font-size: 0.7rem;
+  // line-height: 1;
   transition: opacity var(--transition);
   user-select: none;
 
   &.sun  { opacity: 1; }
-  &.moon { opacity: 0.35; }
+  &.moon { opacity: 1; }
 }
 
 .thumb {

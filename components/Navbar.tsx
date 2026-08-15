@@ -28,8 +28,7 @@ export default function Navbar() {
       </div>
 
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.55rem' }}>
-        <ThemeToggle />
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
         <div className={styles.navCta}>
           <button 
             className={styles.ctaSecondary}
@@ -45,6 +44,7 @@ export default function Navbar() {
             </Link>
           </button>
         </div>
+        <ThemeToggle />
       </div>
     </nav>
   );
