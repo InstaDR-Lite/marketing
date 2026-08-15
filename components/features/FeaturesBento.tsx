@@ -60,7 +60,7 @@ export function FeaturesBento() {
         {/* SECONDARY CARDS */}
         <div className={styles.card}>
           <div className={styles.iconWrapper}><Sparkle size={20} /></div>
-          <h3 className={styles.cardTitle}>Your Practice, Configured Instantly</h3>
+          <h3 className={styles.cardTitle}>Your Room, Configured Instantly</h3>
           <p className={styles.cardText}>Share your existing profile or website. InstaRoom sets up your room, intake flow, and patient experience automatically. </p>
         </div>
 
@@ -76,7 +76,7 @@ export function FeaturesBento() {
         </div>
 
         <div className={styles.card}>
-          <div className={styles.iconWrapper}><ShieldCheck size={20} /></div>
+          <div className={styles.iconWrapper}><Lock size={20} /></div>
           <h3 className={styles.cardTitle}>Immutable audit log</h3>
           <p className={styles.cardText}>Write-once at session close: room URL, attendees, consent, geo-check. Export as PDF or FHIR.</p>
         </div>
