@@ -4,17 +4,17 @@ const STEPS = [
   {
     number: '01',
     title: 'Claim your room',
-    body: 'Sign up and get instaroom.link/[your-practice]. Insta-setup. Yours forever.',
+    body: 'Pick your path — instaroom.link/[your-name], whatever fits — and we mint it in under a minute.',
   },
   {
     number: '02',
     title: 'Share your link',
-    body: 'Add it to your website, Psychology Today, or anywhere patients find you.',
+    body: 'Share it on intake, in your email signature, on a printed door sign. Patients never download anything.',
   },
   {
     number: '03',
-    title: 'Show up to your room',
-    body: 'Consent, payment, and compliance handled before you say hello.',
+    title: 'Close the visit',
+    body: 'When the call ends, consent and the audit log are bound to the call record. Export it as PDF, CSV, or FHIR the moment a records request lands.',
   },
 ];
 
