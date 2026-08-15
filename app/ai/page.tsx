@@ -58,9 +58,7 @@ export default function AIPage() {
           </h1>
           <p className={styles.subheadline}>
             Every session generates a compliance record. Every audit trail is cryptographically sealed.
-            Every billing code is suggested, not guessed.
-            <br /><br />
-            This is what AI looks like when it's built for healthcare — not bolted on.
+            Every billing code is suggested, not guessed.   
           </p>
           <div className={styles.heroCtas}>
             <a href="/claim" className={styles.ctaPrimary}>Claim your room</a>
