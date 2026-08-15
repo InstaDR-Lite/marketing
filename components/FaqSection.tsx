@@ -74,7 +74,7 @@ export default function FaqSection() {
         <div className={styles.header}>
           <p className={styles.sectionLabel}>09 - faq</p>
           <h2 className={styles.headline}>
-            Questions providers ask<span className="cursor" />
+           Q & A
           </h2>
         </div>
 
@@ -114,13 +114,13 @@ export default function FaqSection() {
 
         <div className={styles.ctaStrip}>
           <span className={styles.ctaText}>
-            Still have questions? We answer within one business day.
+            Still have questions? Hit us up!
           </span>
           <button className={styles.ctaBtn}>
-            <Link href="mailto:rupesh@getinstaroom.com">contact us</Link>
+            <Link href="mailto:rupesh@getinstaroom.com">send mail</Link>
           </button>
         </div>
       </div>
-    </section>
+    </section>˝
   );
 }
