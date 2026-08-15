@@ -1,8 +1,9 @@
 import CTASection from '@/components/cta/CTASection';
 import styles from './AIPage.module.scss';
-import { Brain, Shield, FileText, Sparkles, ClipboardList, Zap } from 'lucide-react';
+import { Brain, Shield, FileText, Sparkles } from 'lucide-react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import { SessionTimeline } from '@/components/SessionTimeline/SessionTimeline';
 
 const LIVE_FEATURES = [
   {
@@ -48,24 +49,28 @@ export default function AIPage() {
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
-          <div className={styles.eyebrow}>
-            <span className={styles.eyebrowDot} />
-            InstaRoom AI
+          <div>
+            <div className={styles.eyebrow}>
+              <span className={styles.eyebrowDot} />
+              InstaRoom AI
+            </div>
+            <h1 className={styles.headline}>
+              Intelligence built<br />
+              for clinical practice.
+            </h1>
+            <p className={styles.subheadline}>
+              Every session generates a compliance record. Every audit trail is cryptographically sealed.
+              Every billing code is suggested, not guessed.   
+            </p>
+            <div className={styles.heroCtas}>
+              <a href="/claim" className={styles.ctaPrimary}>Claim your room</a>
+              <a href="#zennotes" className={styles.ctaSecondary}>Enrol for ZenNotes →</a>
+            </div>
           </div>
-          <h1 className={styles.headline}>
-            Intelligence built<br />
-            for clinical practice.
-          </h1>
-          <p className={styles.subheadline}>
-            Every session generates a compliance record. Every audit trail is cryptographically sealed.
-            Every billing code is suggested, not guessed.   
-          </p>
-          <div className={styles.heroCtas}>
-            <a href="/claim" className={styles.ctaPrimary}>Claim your room</a>
-            <a href="#zennotes" className={styles.ctaSecondary}>Enrol for ZenNotes →</a>
+          <div className={styles.postSessionTimeline}>
+            <SessionTimeline autoPlay loop loopDelay={2200} showReplay={false} />
           </div>
         </div>
-        
       </section>
 
       {/* Live features */}
