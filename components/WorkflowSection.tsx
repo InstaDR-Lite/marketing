@@ -47,7 +47,24 @@ export default function WorkflowSection() {
           </div>
 
           {/* Card 2: Geo Verification */}
-          <div style={{ display: "flex", flexDirection: "column", gap: '24px'}}>
+          <div style={{ display: "flex", flexDirection: "column", gap: '24px' }}>
+            <div className={styles.card}>
+            <div className={styles.cardVisual}>
+              <div className={styles.mockGeoCard}>
+                <div className={styles.geoInfo}>
+                    <div className={styles.geoSatus}>
+                      instaroom.link/sarah-therapy
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.cardBody}>
+              <h3>One permanent link</h3>
+              <p>
+                Send one link forever. InstaRoom handles room state, patient readiness, and post-call accounting.
+              </p>
+            </div>
+          </div>
           <div className={styles.card}>
             <div className={styles.cardVisual}>
               <div className={styles.mockGeoCard}>
@@ -65,23 +82,7 @@ export default function WorkflowSection() {
               </p>
             </div>
           </div>
-           <div className={styles.card}>
-            <div className={styles.cardVisual}>
-              <div className={styles.mockGeoCard}>
-                <div className={styles.geoInfo}>
-                    <div className={styles.geoSatus}>
-                      instaroom.link/sarah-therapy
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.cardBody}>
-              <h3>One permanent link</h3>
-              <p>
-                Send one link forever. InstaRoom handles room state, patient readiness, and post-call accounting.
-              </p>
-            </div>
-          </div>
+          
           </div>
         </div>
       </div>
