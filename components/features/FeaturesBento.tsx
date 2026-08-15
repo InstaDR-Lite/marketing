@@ -1,5 +1,5 @@
 import styles from './FeaturesBento.module.scss';
-import { Zap, ShieldCheck, FileCheck, CreditCard, Lock } from 'lucide-react';
+import { Zap, ShieldCheck, FileCheck, CreditCard, Lock, Sparkle } from 'lucide-react';
 
 export function FeaturesBento() {
   return (
@@ -59,15 +59,20 @@ export function FeaturesBento() {
 
         {/* SECONDARY CARDS */}
         <div className={styles.card}>
-          <div className={styles.iconWrapper}><Lock size={20} /></div>
-          <h3 className={styles.cardTitle}>Silent geo-verification</h3>
-          <p className={styles.cardText}>Patient location is checked against your licensed states before the room opens.</p>
+          <div className={styles.iconWrapper}><Sparkle size={20} /></div>
+          <h3 className={styles.cardTitle}>Your Practice, Configured Instantly</h3>
+          <p className={styles.cardText}>Share your existing profile or website. InstaRoom sets up your room, intake flow, and patient experience automatically. </p>
         </div>
 
         <div className={styles.card}>
           <div className={styles.iconWrapper}><FileCheck size={20} /></div>
           <h3 className={styles.cardTitle}>Bound e-consent</h3>
           <p className={styles.cardText}>Electronic consent is cryptographically bound to the call record — admissible and immutable.</p>
+        </div>
+        <div className={styles.card}>
+          <div className={styles.iconWrapper}><CreditCard size={20} /></div>
+          <h3 className={styles.cardTitle}>Practice-first payments</h3>
+          <p className={styles.cardText}>Funds route through your own Stripe account when you bring your own.</p>
         </div>
 
         <div className={styles.card}>
@@ -76,11 +81,6 @@ export function FeaturesBento() {
           <p className={styles.cardText}>Write-once at session close: room URL, attendees, consent, geo-check. Export as PDF or FHIR.</p>
         </div>
 
-        <div className={styles.card}>
-          <div className={styles.iconWrapper}><CreditCard size={20} /></div>
-          <h3 className={styles.cardTitle}>Practice-first payments</h3>
-          <p className={styles.cardText}>Funds route through your own Stripe account when you bring your own.</p>
-        </div>
       </div>
     </section>
   );
