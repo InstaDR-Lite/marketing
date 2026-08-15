@@ -23,6 +23,7 @@ export default function Navbar() {
           <Link href="/#video">Video</Link>
           <Link href="/#billing">Billing</Link>
           <Link href="/#compliance">Compliance</Link>
+          <Link href="/ai">AI</Link>
           <Link href="/#pricing">Pricing</Link>
         </ul>
       </div>
