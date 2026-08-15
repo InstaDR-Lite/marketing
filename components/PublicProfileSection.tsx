@@ -32,6 +32,7 @@ export default function PublicProfileSection() {
             {/* Provider info */}
             <div className={styles.profileBlock} style={{ flexDirection: 'row', alignItems: 'center', gap: '1rem' }}>
               <div className={styles.profileAvatar}>
+                SF
               </div>
               <div>
                 <div className={styles.profileName}>

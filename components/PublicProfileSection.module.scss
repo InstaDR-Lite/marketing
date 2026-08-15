@@ -56,7 +56,7 @@
 
 .cols {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.GG5fr 1fr;
   gap: 2rem;
   align-items: start;
 
@@ -108,6 +108,12 @@
   border-radius: 50%;
   background: var(--color-border-2);
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  font-weight: 700;
+  font-family: var(--font-mono);
 }
 
 .profileLogoText {
