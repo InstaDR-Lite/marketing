@@ -79,7 +79,7 @@ export function FeaturesBento() {
         <div className={styles.card}>
           <div className={styles.iconWrapper}><CreditCard size={20} /></div>
           <h3 className={styles.cardTitle}>Practice-first payments</h3>
-          <p className={styles.cardText}>Funds route through your own Stripe account — 0% platform fee when you bring your own.</p>
+          <p className={styles.cardText}>Funds route through your own Stripe account when you bring your own.</p>
         </div>
       </div>
     </section>
