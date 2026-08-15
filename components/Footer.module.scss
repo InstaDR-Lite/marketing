@@ -72,7 +72,7 @@
     font-size: 0.875rem;
     color: var(--color-text-secondary);
     transition: color var(--transition);
-
+    font-family: var(--font-mono);
     &:hover {
       color: var(--color-teal);
     }

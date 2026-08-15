@@ -42,6 +42,7 @@
     color: var(--color-text-secondary);
     transition: color var(--transition);
     letter-spacing: 0.01em;
+    font-family: var(--font-mono);
 
     &:hover {
       color: var(--color-text-primary);
