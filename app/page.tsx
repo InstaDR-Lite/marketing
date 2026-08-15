@@ -12,6 +12,7 @@ import Hero from '@/components/hero/HeroSection';
 import PublicProfileSection from '@/components/PublicProfileSection';
 import HowItWorksSection from '@/components/howitworks/HowItWorks';
 import CTASection from '@/components/cta/CTASection';
+import { FeaturesBento } from '@/components/features/FeaturesBento';
 // import FeaturesStrip from '@/components/FeaturesStrip';
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <main>
         <Hero />
         <HowItWorksSection />
+        <FeaturesBento />
         {/* <FeaturesStrip /> */}
         <WorkflowSection />
         <VideoSection />

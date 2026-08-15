@@ -1,0 +1,263 @@
+// FeaturesBento.module.scss
+
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.kicker {
+  color: var(--color-teal);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-top: 8px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Bento Grid Layout */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card Base Styles */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-card);
+  transition: border-color var(--transition), box-shadow var(--transition);
+
+  &:hover {
+    border-color: var(--color-border-2);
+  }
+}
+
+/* Hero Card Spanning 2 Columns */
+.heroCard {
+  grid-column: span 2;
+  background: linear-gradient(135deg, var(--color-surface-2) 0%, var(--color-surface) 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 250px;
+    background: var(--color-teal-glow);
+    filter: blur(80px);
+    pointer-events: none;
+  }
+}
+
+/* Hero Card Header Elements */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-teal-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-teal);
+  border: 1px solid var(--color-teal-glow);
+}
+
+.metricBadge {
+  background-color: var(--color-surface-3);
+  border: 1px solid var(--color-border);
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.metricLabel {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.metricValue {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-teal);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.cardText {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+
+  strong {
+    color: var(--color-text-primary);
+  }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+  .headerRow {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bentoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroCard {
+    grid-column: span 1;
+  }
+}
+
+/* ==========================================================================
+   HISTOGRAM & HERO BENTO CARD STYLES
+   ========================================================================== */
+
+.heroCard {
+  grid-template-columns: 1.5fr 1fr;
+  background: linear-gradient(135deg, var(--color-surface-2) 0%, var(--color-surface) 100%);
+  display: grid;
+  // flex-direction: row;
+  // justify-content: space-between;
+  gap: 24px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Embedded Histogram Widget */
+.histogramWidget {
+  background-color: var(--color-surface-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.histogramHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.histogramMetricLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-secondary);
+}
+
+.histogramMetricValue {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1;
+
+  span {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-left: 2px;
+  }
+}
+
+/* Histogram Bars Flex Container */
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 6px;
+  height: 80px;
+  width: 100%;
+}
+
+/* Individual Bar Element */
+.bar {
+  flex: 1 0 0;
+  background-color: var(--color-teal-dim);
+  border-radius: var(--radius-sm);
+  transition: height var(--transition), background-color var(--transition);
+
+  &:hover {
+    background-color: var(--color-teal-dark);
+  }
+}
+
+/* Highlighted Bar (The Peak / Active Measurement) */
+.barActive {
+  background-color: var(--color-teal) !important;
+  box-shadow: 0 0 12px var(--color-teal-glow);
+}
+
+/* Footer Tagline */
+.histogramFooter {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
