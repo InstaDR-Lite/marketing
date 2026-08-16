@@ -105,7 +105,7 @@ export default function AIPage() {
           <div className={styles.zennotesInner}>
             <div className={styles.zennotesLeft}>
               <div className={styles.sectionLabel}>// in development</div>
-              <h2 className={styles.zennotesTitle}>InstaNotes</h2>
+              <h2 className={styles.zennotesTitle}>InstaNotes </h2>
               <p className={styles.zennotesSubtitle}>Ambient Session Documentation</p>
               <p className={styles.zennotesDesc}>
                 Stop typing notes after every session.  It listens, structures, and drafts
