@@ -75,7 +75,7 @@
 .card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
+  // border-radius: var(--radius-lg);
   flex-direction: column;
   display: flex;
   justify-content: space-between;
@@ -92,7 +92,7 @@
 .cardFeatured {
   background: var(--color-surface-2);
   border: 1px solid rgba(12, 234, 216, 0.3);
-  border-radius: var(--radius-lg);
+  // border-radius: var(--radius-lg);
   padding: 2rem;
   box-shadow: 0 0 60px rgba(12, 234, 216, 0.08);
   position: relative;
@@ -100,6 +100,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+
   .popularTag {
     position: absolute;
     top: -13px;
@@ -108,9 +109,9 @@
     padding: 0.3rem 1rem;
     background: var(--color-teal);
     color: var(--color-bg);
-    border-radius: 5px;
+
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -234,14 +235,16 @@
   width: 100%;
   padding: 12px 24px;
   text-align: center;
-  border-radius: var(--radius-pill);
+
   background: var(--color-teal);
   color: var(--color-bg);
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.875rem;
   letter-spacing: 0.01em;
   transition: all var(--transition);
+  font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
 
   &:hover {
     // background: var(--color-white);
@@ -254,16 +257,16 @@
 .btnOutline {
   width: 100%;
   padding: 12px 24px;
-  // border-radius: var(--radius-md);
   border: 1px solid var(--color-border-2);
   color: var(--color-teal);
   font-family: var(--font-body);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.875rem;
   transition: all var(--transition);
   background: transparent;
-  border-radius: var(--radius-pill);
-
+  text-transform: uppercase;
+  font-family: var(--font-mono), monospace;
+  
   &:hover {
     border-color: var(--color-teal);
     color: var(--color-teal);

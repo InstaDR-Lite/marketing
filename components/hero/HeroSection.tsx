@@ -80,7 +80,7 @@ export default function HeroSection() {
       <div className={styles.ctas}>
         <a href="#pricing" className={styles.ctaPrimary}>Claim Your Room</a>
         <a href="/demo" className={styles.ctaSecondary}>
-          <span className={styles.playIcon}>▶</span> Watch Demo
+          Book a Demo
         </a>
       </div>
 

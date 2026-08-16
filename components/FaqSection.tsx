@@ -121,6 +121,6 @@ export default function FaqSection() {
           </button>
         </div>
       </div>
-    </section>˝
+    </section>
   );
 }

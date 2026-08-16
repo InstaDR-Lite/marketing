@@ -128,7 +128,8 @@
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 700;
-  border-radius: var(--radius-pill);
+  font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
   transition: opacity var(--transition);
 
   &:hover { opacity: 0.88; }
@@ -144,11 +145,14 @@
   font-family: var(--font-body);
   font-size: 1rem;  
   font-weight: 700;
-  border-radius: var(--radius-pill);
+
   transition: all var(--transition);
   border: 1px solid var(--color-border-2);
   transition: background var(--transition);
 
+   font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
+  
   &:hover { background: var(--color-surface-3); }
 }
 

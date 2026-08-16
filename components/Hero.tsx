@@ -67,13 +67,10 @@ export default function Hero() {
           {/* <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <path d="M8 2v12M2 8h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
           </svg> */}
-          Claim Your Room →
+          Claim Your Room
         </button>
         <button className={styles.btnSecondary}>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M6 4l6 4-6 4V4z" fill="currentColor"/>
-          </svg>
-          Watch Demo
+          Book a Demo
         </button>
       </div>
 

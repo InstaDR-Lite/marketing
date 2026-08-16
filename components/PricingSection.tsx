@@ -154,7 +154,7 @@ export default function PricingSection() {
               </div>
             <button className={styles.btnOutline}>
               <a href="mailto:rupesh@getinstaroom.com?subject=Hello">
-                Email Team
+                Email Us
               </a>
             </button>
           </div>
@@ -191,7 +191,7 @@ export default function PricingSection() {
             </div>
             <button className={styles.btnOutline}>
               <a href="mailto:rupesh@getinstaroom.com?subject=Hello">
-                Email Team
+                Email Us
               </a>
             </button>
         </div>

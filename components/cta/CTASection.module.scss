@@ -145,9 +145,12 @@
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 600;
-  border-radius: var(--radius-pill);
+
   transition: all var(--transition);
   box-shadow: 0 0 20px var(--color-teal-dim);
+
+   font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
 
   &:hover {
     background: var(--color-teal-dark);
@@ -179,9 +182,11 @@
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 700;
-  border-radius: var(--radius-pill);
-  transition: all var(--transition);
 
+  transition: all var(--transition);
+  font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
+  
   &:hover {
     background: var(--color-surface-2);
     border-color: var(--color-teal-glow);
