@@ -1,6 +1,6 @@
 import CTASection from '@/components/cta/CTASection';
 import styles from './AIPage.module.scss';
-import { Brain, Shield, FileText, Sparkles } from 'lucide-react';
+import { Brain, Shield, FileText, Sparkles, Zap, Notebook } from 'lucide-react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import { SessionTimeline } from '@/components/SessionTimeline/SessionTimeline';
@@ -31,6 +31,13 @@ const LIVE_FEATURES = [
   //   title: 'Superbill Generation',
   //   description: 'CPT and ICD-10 codes, provider NPI, and session details compiled into an insurance-ready superbill. One click to PDF.',
   // },
+
+  // {
+  //   icon: <Notebook size={20} />,
+  //   label: 'Coming Soon',
+  //   title: 'Private and Public SOAP Notes',
+  //   description: 'CPT and ICD-10 codes, provider NPI, and session details compiled into an insurance-ready superbill. One click to PDF.',
+  // },
   {
     icon: <Sparkles size={20} />,
     label: 'Live',
@@ -39,8 +46,6 @@ const LIVE_FEATURES = [
   },
 ];
 
-const COMING_FEATURES = [
-];
 
 export default function AIPage() {
   return (
@@ -94,15 +99,13 @@ export default function AIPage() {
         </div>
       </section>
 
-
-
       {/* ZenNotes */}
       <section className={styles.zennotes} id="zennotes">
         <div className={styles.container}>
           <div className={styles.zennotesInner}>
             <div className={styles.zennotesLeft}>
               <div className={styles.sectionLabel}>// in development</div>
-              <h2 className={styles.zennotesTitle}>AI SOAP Notes</h2>
+              <h2 className={styles.zennotesTitle}>InstaNotes</h2>
               <p className={styles.zennotesSubtitle}>Ambient Session Documentation</p>
               <p className={styles.zennotesDesc}>
                 Stop typing notes after every session.  It listens, structures, and drafts
