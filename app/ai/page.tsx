@@ -7,6 +7,12 @@ import { SessionTimeline } from '@/components/SessionTimeline/SessionTimeline';
 import PatientNoteMockup from '@/components/PatientNotesMockup/PatientNoteMockup';
 
 const LIVE_FEATURES = [
+   {
+    icon: <Sparkles size={20} />,
+    label: 'Live',
+    title: 'Your Room, Configured Instantly',
+    description: 'Share your existing profile or website. InstaRoom sets up your room, intake flow, and patient experience automatically.',
+  },
   {
     icon: <Brain size={20} />,
     label: 'Live',
@@ -25,25 +31,20 @@ const LIVE_FEATURES = [
     title: 'Immutable Call Log',
     description: 'Write-once session records capturing consent, geo-verification, duration, and payment. Export as PDF, CSV, or FHIR.',
   },
-  // {
-  //   icon: <Zap size={20} />,
-  //   label: 'Coming Soon',
-  //   title: 'Superbill Generation',
-  //   description: 'CPT and ICD-10 codes, provider NPI, and session details compiled into an insurance-ready superbill. One click to PDF.',
-  // },
-
-  // {
-  //   icon: <Notebook size={20} />,
-  //   label: 'Coming Soon',
-  //   title: 'Private and Public SOAP Notes',
-  //   description: 'CPT and ICD-10 codes, provider NPI, and session details compiled into an insurance-ready superbill. One click to PDF.',
-  // },
   {
-    icon: <Sparkles size={20} />,
-    label: 'Live',
-    title: 'Your Room, Configured Instantly',
-    description: 'Share your existing profile or website. InstaRoom sets up your room, intake flow, and patient experience automatically.',
+    icon: <Zap size={20} />,
+    label: 'Coming Soon',
+    title: 'Superbill Generation',
+    description: 'CPT and ICD-10 codes, provider NPI, and session details compiled into an insurance-ready superbill. One click to PDF.',
   },
+
+  {
+    icon: <Notebook size={20} />,
+    label: 'Coming Soon',
+    title: 'Private and Public SOAP Notes',
+    description: 'CPT and ICD-10 codes, provider NPI, and session details compiled into an insurance-ready superbill. One click to PDF.',
+  }
+ 
 ];
 
 
