@@ -368,3 +368,15 @@
   color: var(--color-text-secondary);
   letter-spacing: 0.04em;
 }
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-teal-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-teal);
+  border: 1px solid var(--color-teal-glow);
+}

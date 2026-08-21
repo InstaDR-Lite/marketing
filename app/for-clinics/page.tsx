@@ -190,8 +190,10 @@ export default function ClinicsPage() {
           </h2>
           <div className={styles.grid}>
               {FEATURES.map(({ Icon, title, desc }) => (
-              <div key={title} className={styles.card}>
-                <Icon size={(20)} color='green'/>
+                <div key={title} className={styles.card}>
+                  <div className={styles.iconWrapper}>
+                    <Icon size={(20)} color='green'/>
+                  </div>
                 <h3 className={styles.cardTitle}>{title}</h3>
                 <p className={styles.cardDesc}>{desc}</p>
               </div>
