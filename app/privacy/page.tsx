@@ -63,7 +63,7 @@ const SECTIONS = [
     body:  <>
       <p>You may request access to, correction of, or deletion of your personal data at any time.</p>
       <ul className={styles.list}>
-        <li>Email us at hello@instaroom.link</li>
+        <li>Email us at rupesh@getinstaroom.com</li>
         <li>Providers may delete their account from the Settings panel</li>
         <li>We respond to all data requests within 30 days</li>
       </ul>

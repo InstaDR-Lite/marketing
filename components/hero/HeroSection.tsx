@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import styles from './HeroSection.module.scss';
 import Image from 'next/image';
+import BookDemoModal from '../bookdemo/BookDemoModal';
 
 const SLUGS = [
   'dr.lewis',
@@ -19,7 +20,8 @@ export default function HeroSection() {
   const [latency, setLatency] = useState(17);
 
   const [slugIndex, setSlugIndex] = useState(0);
-  const [visible, setVisible]     = useState(true);
+  const [visible, setVisible] = useState(true);
+  const [showDemo, setShowDemo] = useState(false);
 
   // useEffect(() => {
   //   const t = setInterval(() => {
@@ -79,9 +81,9 @@ export default function HeroSection() {
       </div>
       <div className={styles.ctas}>
         <a href="#pricing" className={styles.ctaPrimary}>Claim Your Room</a>
-        <a href="/demo" className={styles.ctaSecondary}>
-          Book a Demo
-        </a>
+        <button onClick={() => setShowDemo(true)} className={styles.ctaSecondary}>
+          Book a 15-minute demo
+        </button>
       </div>
 
       {/* ── browser mockup ── */}
@@ -148,6 +150,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+      {showDemo && <BookDemoModal onClose={() => setShowDemo(false)} />}
     </section>
   );
 }
