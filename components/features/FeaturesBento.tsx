@@ -3,7 +3,11 @@ import { Zap, ShieldCheck, FileCheck, CreditCard, Lock, Sparkle } from 'lucide-r
 
 export function FeaturesBento() {
   return (
-    <section id="bento" className={styles.sectionContainer}>
+    <section className={styles.section } id="bento">
+    
+      <div className={styles.container}>
+
+      
       <div className={styles.headerRow}>
         <div>
           <span className={styles.kicker}>// WHAT'S INSIDE</span>
@@ -83,7 +87,8 @@ export function FeaturesBento() {
           <p className={styles.cardText}>Write-once at session close: room URL, attendees, consent, geo-check. Export as PDF or FHIR.</p>
         </div>
 
-      </div>
+        </div>
+        </div>
     </section>
   );
 }
