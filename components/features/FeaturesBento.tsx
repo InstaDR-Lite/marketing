@@ -59,14 +59,16 @@ export function FeaturesBento() {
 
         {/* SECONDARY CARDS */}
         <div className={styles.card}>
-          <div className={styles.iconWrapper}><Sparkle size={20} /></div>
+          <div className={styles.iconWrapper}>
+            <Sparkle size={20} />
+          </div>
           <h3 className={styles.cardTitle}>Your Room, Configured Instantly</h3>
           <p className={styles.cardText}>Share your existing profile or website. InstaRoom sets up your room, intake flow, and patient experience automatically. </p>
         </div>
 
         <div className={styles.card}>
           <div className={styles.iconWrapper}><FileCheck size={20} /></div>
-          <h3 className={styles.cardTitle}>Bound e-consent and Geo-Verification</h3>
+          <h3 className={styles.cardTitle}>Bounded e-consent and Geo-Verification</h3>
           <p className={styles.cardText}>Electronic consent is cryptographically bound to the call record — admissible and immutable.</p>
         </div>
         <div className={styles.card}>

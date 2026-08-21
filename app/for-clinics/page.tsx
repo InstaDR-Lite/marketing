@@ -2,8 +2,8 @@ import Image from 'next/image';
 import styles from './ClinicsPage.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Building2, CheckCircle, Globe, ShieldCheck, Lock } from 'lucide-react';
-
+import { Building2, CheckCircle, Globe, ShieldCheck, Users, Calendar, Timeline, Tag } from 'lucide-react';
+import { Zap, FileCheck, CreditCard, Lock, Sparkle } from 'lucide-react';
 
 const HERO_CHECKS = [
   'No setup fees',
@@ -13,36 +13,75 @@ const HERO_CHECKS = [
 
 const FEATURES = [
   {
-    icon: '⚡',
+    Icon: Sparkle,
+    title: 'AI onboarding',
+    desc: 'Paste a Psychology Today profile. InstaRoom configures your providers\' rooms, intake forms, and patient experience automatically.'
+  },
+  {
+    Icon: Users,
     title: 'Multi-provider scheduling',
     desc: 'Every provider gets their own room and calendar. Patients book the right person at the right time — automatically.'
   },
   {
-    icon: '🔒',
+    Icon: Lock,
     title: 'HIPAA-compliant by default',
     desc: 'Cryptographic audit seals, geo-verification, and consent capture on every session. Compliance is built in, not bolted on.'
   },
   {
-    icon: '📋',
-    title: 'AI-powered onboarding',
-    desc: 'Paste a Psychology Today profile. InstaRoom configures your providers\' rooms, intake forms, and patient experience automatically.'
-  },
-  {
-    icon: '💳',
+    Icon: CreditCard,
     title: 'Clinic-wide billing',
     desc: 'Session fees, copay collection, and superbill generation across all providers — from one dashboard.'
   },
   {
-    icon: '📊',
+    Icon: Timeline,
     title: 'Daily clinical timeline',
     desc: 'Your entire clinic\'s day in a single view. Filter by provider, see who\'s in session, what\'s upcoming, what\'s pending.'
   },
   {
-    icon: '🏷️',
+    Icon: Tag,
     title: 'Your brand, your domain',
     desc: 'White-label branding and custom domains available for clinic partners. Your patients see your name, not ours.'
   },
 ];
+
+// const FEATURES = [
+//   {
+//     icon: Users,
+//     title: "Multi-Provider Dashboards",
+//     desc: "Give every provider their own room and schedule while admins see the full clinic view at a glance. No more juggling separate accounts.",
+//     badge: null,
+//   },
+//   {
+//     icon: Calendar,
+//     title: "Centralized Scheduling",
+//     desc: "One calendar for the entire practice. Manage all provider schedules, availability windows, and patient flow from a single admin panel.",
+//     badge: null,
+//   },
+//   {
+//     icon: Palette,
+//     title: "White-Label Branding",
+//     desc: "Customize the patient-facing experience with your clinic's logo, colors, and domain. Patients see your brand — not ours.",
+//     badge: "On Roadmap",
+//   },
+//   {
+//     icon: ShieldCheck,
+//     title: "HIPAA-Compliant Video",
+//     desc: "End-to-end encrypted video rooms with BAA support, patient waiting rooms, and audit logging built in — not bolted on.",
+//     badge: null,
+//   },
+//   {
+//     icon: CreditCard,
+//     title: "Stripe Billing Integration",
+//     desc: "Collect copays, session fees, and subscriptions before or after appointments. Invoicing and receipts handled automatically.",
+//     badge: null,
+//   },
+//   {
+//     icon: Headphones,
+//     title: "Dedicated Support",
+//     desc: "A real human who knows your clinic's setup responds within hours — not a ticket queue with a 48-hour SLA.",
+//     badge: null,
+//   },
+// ]
 
 // const ROADMAP = [
 //   { label: 'Live',         item: 'HIPAA-compliant video rooms' },
@@ -132,7 +171,7 @@ export default function ClinicsPage() {
         <div className={styles.trustInner}>
           {TRUST_ITEMS.map(({ Icon, sub, label }) => (
             <div key={sub} className={styles.trustItem}>
-              <Icon height={24} width={24} color='green' />
+              <Icon size={18} color='green' />
               <div>
                 <div className={styles.trustLabel}>{label}</div>
                 <div className={styles.trustSub}>{sub}</div>
@@ -150,11 +189,11 @@ export default function ClinicsPage() {
             Everything your clinic needs.<br />Nothing it doesn&apos;t.
           </h2>
           <div className={styles.grid}>
-            {FEATURES.map(f => (
-              <div key={f.title} className={styles.card}>
-                <div className={styles.cardIcon}>{f.icon}</div>
-                <h3 className={styles.cardTitle}>{f.title}</h3>
-                <p className={styles.cardDesc}>{f.desc}</p>
+              {FEATURES.map(({ Icon, title, desc }) => (
+              <div key={title} className={styles.card}>
+                <Icon size={(20)} color='green'/>
+                <h3 className={styles.cardTitle}>{title}</h3>
+                <p className={styles.cardDesc}>{desc}</p>
               </div>
             ))}
           </div>
