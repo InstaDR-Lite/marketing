@@ -19,11 +19,12 @@ export default function Navbar() {
           </div>
         </Link>
         <ul className={styles.navLinks}>
-          <Link href="/#workflow">Workflow</Link>
-          <Link href="/#video">Video</Link>
-          <Link href="/#billing">Billing</Link>
+          <Link href="/#bento">Features</Link>
+          {/* <Link href="/#video">Video</Link> */}
+          {/* <Link href="/#billing">Billing</Link> */}
           <Link href="/#compliance">Compliance</Link>
           <Link href="/ai">AI</Link>
+          <Link href="/for-clinics">Clinics</Link>
           <Link href="/#pricing">Pricing</Link>
         </ul>
       </div>

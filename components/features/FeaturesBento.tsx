@@ -3,7 +3,7 @@ import { Zap, ShieldCheck, FileCheck, CreditCard, Lock, Sparkle } from 'lucide-r
 
 export function FeaturesBento() {
   return (
-    <section className={styles.sectionContainer}>
+    <section id="bento" className={styles.sectionContainer}>
       <div className={styles.headerRow}>
         <div>
           <span className={styles.kicker}>// WHAT'S INSIDE</span>
