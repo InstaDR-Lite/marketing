@@ -98,30 +98,31 @@ export default function ClinicsPage() {
               Multi-provider scheduling, HIPAA-compliant video rooms, and AI-powered onboarding — without the enterprise overhead.
             </p>
 
-            <div className={styles.ctas}>
+            <div style={{display: 'flex', flexDirection: 'column', gap: '14px'}}>
+              <div className={styles.ctas}>
+                <button onClick={() => setShowDemo(true)} className={styles.ctaPrimary}>
+                  Book a 15-minute demo
+                </button>
+                <a href="#features" className={styles.ctaSecondary}> 
+                  Explore 
+                </a>
+              </div>
 
-              <button onClick={() => setShowDemo(true)} className={styles.ctaPrimary}>
-                Book a 15-minute demo
-              </button>
-              <a href="#features" className={styles.ctaSecondary}> 
-                Explore 
-              </a>
-            </div>
-
-            <div className={styles.checks}>
-              {HERO_CHECKS.map(item => (
-                <span key={item} className={styles.checkItem}>
-                  <CheckCircle size={14} style={{ color: 'var(--color-teal)', flexShrink: 0 }} />
-                  {item}
-                </span>
-              ))}
+              <div className={styles.checks}>
+                {HERO_CHECKS.map(item => (
+                  <span key={item} className={styles.checkItem}>
+                    <CheckCircle size={14} style={{ color: 'var(--color-teal)', flexShrink: 0 }} />
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
 
           <div className={styles.heroRight}>
             <div className={styles.heroImgWrap}>
               <Image
-                src="/screenshots/clinic-daily-screenshot-1.png"
+                src="/screenshots/clinic-daily-screenshot.png"
                 alt="InstaRoom clinic daily timeline"
                 width={640}
                 height={480}

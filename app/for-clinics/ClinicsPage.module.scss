@@ -13,15 +13,15 @@
 // ─── HERO ──────────────────────────────────────────────────────────────────
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 3rem;
+  // grid-template-columns: 1fr 1.25fr;
+  gap: 2rem;
   align-items: center;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 8rem 24px 6rem;
+  padding: 8rem 24px 0rem;
 
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
     gap: 48px;
     padding: 6rem 24px 4rem;
   }
@@ -43,6 +43,9 @@
   overflow: hidden;
   border: 1px solid var(--color-border-2);
   box-shadow: 0 32px 80px rgba(0,0,0,0.12);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
 }
 
 .heroImg {
@@ -89,11 +92,10 @@
 // ─── SUB ───────────────────────────────────────────────────────────────────
 .sub {
   font-family: var(--font-body);
-  font-size: clamp(14px, 1.6vw, 17px);
-  font-weight: 300;
+  font-size: clamp(14px, 1.6vw, 18px);
   line-height: 1.7;
   color: var(--color-text-secondary);
-  max-width: 480px;
+  max-width: 640px;
   margin-bottom: 36px;
 }
 
@@ -102,7 +104,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
   flex-wrap: wrap;
 }
 
@@ -299,8 +300,8 @@
 
 // trust
 .trustBar {
-  padding: 32px 24px;
-  border-top: 1px solid var(--color-border);
+  padding:40px 24px;
+  // border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   background: var(--color-surface);
 }
@@ -313,6 +314,10 @@
   align-items: center;
   justify-content: center;
   gap: 32px 56px;
+
+  @media (max-width: 900px) {
+    gap: 1rem;
+  }
 }
 
 .trustItem {
@@ -356,7 +361,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px 20px;
-  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .checkItem {
