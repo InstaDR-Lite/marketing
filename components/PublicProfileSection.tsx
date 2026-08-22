@@ -51,7 +51,9 @@ export default function PublicProfileSection() {
               <div className={styles.settingsDivider} />
               <div className={styles.settingsRow}>
                 <span className={styles.settingsKey}>Public slug</span>
-                <span className={styles.settingsVal}>instaroom.link/sarah-therapy</span>
+                <span className={styles.settingsVal}>
+                  instaroom.link/dr-noah
+                </span>
               </div>
               <div className={styles.settingsDivider} />
               <div className={styles.settingsRow}>

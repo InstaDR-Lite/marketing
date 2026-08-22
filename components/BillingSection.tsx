@@ -20,7 +20,7 @@ export default function BillingSection() {
               <span className={styles.stripeChip}>via Stripe</span>
             </div>
             <div className={styles.payoutAmount}>$150.00</div>
-            <div className={styles.payoutSub}>Session fee · Dr. Rivera · 11:30 AM</div>
+            <div className={styles.payoutSub}>Session fee · Dr. Oderberg · 11:30 AM</div>
             <div className={styles.payoutStatus}>
               <div className={styles.checkIcon}>✓</div>
               Payout Successful — Deposited to your bank
