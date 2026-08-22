@@ -16,8 +16,25 @@ export default function VideoSection() {
       </div>
       <div className={styles.container}>
 
-
-        {/* Left — copy */}
+        {/* Left — screenshot */}
+        <div className={styles.screenshotWrap}>
+          <div className={styles.screenshotBadge}>
+            <span className={styles.liveDot} />
+            LIVE SESSION
+          </div>
+          <Image
+            src="/easy-connecting.jpg"
+            alt="InstaRoom video session"
+            width={1200}
+            height={750}
+            className={styles.screenshot}
+            priority
+          />
+          <div className={styles.browserChip}>
+            Native in <span>Safari</span> · No install
+          </div>
+        </div>
+        {/* Right — copy */}
         <div className={styles.text}>
           <div className={styles.features}>
             <div className={styles.feature}>
@@ -56,25 +73,6 @@ export default function VideoSection() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Right — screenshot */}
-        <div className={styles.screenshotWrap}>
-          <div className={styles.screenshotBadge}>
-            <span className={styles.liveDot} />
-            LIVE SESSION
-          </div>
-          <Image
-            src="/easy-connecting.jpg"
-            alt="InstaRoom video session"
-            width={1200}
-            height={750}
-            className={styles.screenshot}
-            priority
-          />
-          <div className={styles.browserChip}>
-            Native in <span>Safari</span> · No install
           </div>
         </div>
 
