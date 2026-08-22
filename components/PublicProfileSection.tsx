@@ -1,4 +1,6 @@
+'use c'
 import styles from './PublicProfileSection.module.scss';
+import Image from 'next/image';
 
 export default function PublicProfileSection() {
   return (
@@ -16,87 +18,19 @@ export default function PublicProfileSection() {
         {/* Two column layout */}
         <div className={styles.cols}>
 
-          {/* ── Left — actual profile page mockup ── */}
-          <div className={styles.profileCard}>
-            {/* Nav */}
-            <div className={styles.profileNav}>
-              <div className={styles.profileLogo}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="24" viewBox="0 0 300 75" fontFamily="Geist, Arial, sans-serif" fontWeight="800" fontSize="44">
-                  <text x="0" y="55" fill="currentColor">insta</text>
-                  <circle cx="124" cy="42" r="9" fill="#1E9AA0"></circle>
-                  <text x="138" y="55" fill="currentColor">room</text>
-                </svg>
-              </div>
-            </div>
-
-            {/* Provider info */}
-            <div className={styles.profileBlock} style={{ flexDirection: 'row', alignItems: 'center', gap: '1rem' }}>
-              <div className={styles.profileAvatar}>
-                SF
-              </div>
-              <div>
-                <div className={styles.profileName}>
-                  Sarah Flanders <span className={styles.profileBadge}>MFT</span>
-                </div>
-                <div className={styles.profileSpecialty}>Startup founders</div>
-                <div className={styles.profileStatus}>
-                  <span className={styles.statusDot} />
-                  accepting telehealth visits
-                </div>
-                <div className={styles.profileLicense}>Licensed in: CA</div>
-              </div>
-            </div>
-
-            {/* Details */}
-            <div className={styles.profileBlock}>
-
-              <div className={styles.profileDetail} style={{ marginBottom: '12px' }}>
-                I particularly love diving into exposure therapy with folks who are looking to expand their capacity to be kind to themselves while they experience challenging thoughts, emotions, and sensations ... more
-              </div>
-              <div className={styles.profileDetail}>
-                <span className={styles.detailKey}>// hours:</span>
-                <span className={styles.detailVal}>Mon–Fri, 9am–5pm</span>
-              </div>
-              <div className={styles.profileDetail}>
-                <span className={styles.detailKey}>// phone:</span>
-                <span className={styles.detailVal}>4155553523</span>
-              </div>
-              <div className={styles.profileTags}>
-                <span className={styles.tag}>self-pay</span>
-                <span className={styles.tag}>insurance</span>
-                <span className={styles.tag}>sliding scale</span>
-              </div>
-              <div className={styles.profileDetail}>
-                <span className={styles.detailKey}>// session:</span>
-                <span className={styles.detailVal}>$350</span>
-                <span className={styles.detailKey} style={{ marginLeft: '12px' }}>// duration:</span>
-                <span className={styles.detailVal}>50 min</span>
-              </div>
-              <div className={styles.profileDetail}>
-                <span className={styles.detailKey}>// certifications:</span>
-                <span className={styles.detailVal}>CBT</span>
-              </div>
-            </div>
-
-            {/* Book CTA */}
-            <button className={styles.bookBtn}>[ BOOK A SESSION ]</button>
-
-            <div className={styles.orDivider}>or</div>
-
-            {/* Waiting room */}
-            <div className={styles.profileBlock}>
-              <div className={styles.profileLabel}>VIRTUAL WAITING ROOM</div>
-              <p className={styles.waitingText}>Enter your name to check in for your session.</p>
-              <input
-                className={styles.waitingInput}
-                placeholder="Your full name"
-                readOnly
-              />
-              <button className={styles.waitingBtn}>[ ENTER WAITING ROOM ]</button>
-            </div>
-
-            {/* Footer */}
-            <div className={styles.profileFooter}>powered by instaroom.link</div>
+          <div>
+            <Image
+              src="/dr-noah@3x-portrait.png"
+              alt="Public profiele"
+              height={852}
+              width={393}
+              style={{
+                height: "auto",
+                maxWidth: "55%",
+                margin: "auto",
+                display: "block"
+              }}
+            />
           </div>
 
           {/* ── Right — settings panel ── */}
@@ -131,7 +65,6 @@ export default function PublicProfileSection() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
