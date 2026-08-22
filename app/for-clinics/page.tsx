@@ -172,8 +172,12 @@ export default function ClinicsPage() {
         {/* ── CTA ── */}
         <section className={styles.ctaSection}>
           <div className={styles.container}>
+            <div className={styles.eyebrow}>
+              <ShieldCheck size={16} />
+              HIPAA-Compliant - BAA Included
+            </div>
             <h2 className={styles.ctaTitle}>
-              Ready to bring your clinic online?
+              Start your clinic pilot today.
             </h2>
             <p className={styles.ctaSub}>
               We work directly with clinic owners to configure InstaRoom for your practice size, specialty, and workflow. No sales process — just a conversation.
@@ -188,7 +192,7 @@ export default function ClinicsPage() {
                 </a>
               </button>
             </div>
-            <div className={styles.checks}>
+            <div className={styles.checks} style={{marginTop: "14px"}}>
               {HERO_CHECKS.map(item => (
                 <span key={item} className={styles.checkItem}>
                   <CheckCircle size={14} style={{ color: 'var(--color-teal)', flexShrink: 0 }} />
