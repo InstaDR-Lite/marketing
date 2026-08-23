@@ -123,7 +123,7 @@ export default function ClinicsPage() {
           <div className={styles.heroRight}>
             {/* <div className={styles.heroImgWrap}> */}
               <Image
-                src="/screenshots/clinic-daily-screenshot.png"
+                src="/screenshots/clinic-daily-screenshot@2x.png"
                 alt="InstaRoom clinic daily timeline"
                 width={640}
                 height={480}
