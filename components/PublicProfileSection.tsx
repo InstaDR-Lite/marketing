@@ -18,25 +18,19 @@ export default function PublicProfileSection() {
         {/* Two column layout */}
         <div className={styles.cols}>
 
-          <div>
+          <div className={styles.imgWrapper}>
             <Image
-              src="/dr-noah@3x-portrait.png"
+              src="/dr-noah1@2x.png"
               alt="Public profiele"
-              height={852}
-              width={393}
-              style={{
-                height: "auto",
-                maxWidth: "55%",
-                margin: "auto",
-                display: "block"
-              }}
+              height={760}
+              width={645}
             />
           </div>
 
           {/* ── Right — settings panel ── */}
           <div className={styles.settingsPanel}>
             <h3 className={styles.settingsTitle}>
-              Everything you need to manage your public profile in one place
+              Everything you need to manage your public profile in one place.
             </h3>
             <p className={styles.settingsSub}>
               Control your public profile, booking availability, and public
