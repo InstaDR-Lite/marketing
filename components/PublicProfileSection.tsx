@@ -20,8 +20,8 @@ export default function PublicProfileSection() {
 
           <div className={styles.imgWrapper}>
             <Image
-              src="/dr-noah1@2x.png"
-              alt="Public profiele"
+              src="/dr-noah@2x.png"
+              alt="Public profile"
               height={760}
               width={645}
             />
