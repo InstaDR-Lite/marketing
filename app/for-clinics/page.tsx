@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 
 import { CreditCard, Lock, Sparkle, Building2, CheckCircle, Globe, ShieldCheck, Users, Timeline, Tag } from 'lucide-react';
 import BookDemoModal from '@/components/bookdemo/BookDemoModal';
+import BookingBento from '@/components/bookingworkflow/BookingBento';
  
 
 const HERO_CHECKS = [
@@ -168,6 +169,8 @@ export default function ClinicsPage() {
             </div>
           </div>
         </section>
+
+        <BookingBento />
 
         {/* ── CTA ── */}
         <section className={styles.ctaSection}>
