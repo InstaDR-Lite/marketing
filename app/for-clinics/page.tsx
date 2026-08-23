@@ -121,7 +121,7 @@ export default function ClinicsPage() {
           </div>
 
           <div className={styles.heroRight}>
-            <div className={styles.heroImgWrap}>
+            {/* <div className={styles.heroImgWrap}> */}
               <Image
                 src="/screenshots/clinic-daily-screenshot.png"
                 alt="InstaRoom clinic daily timeline"
@@ -130,7 +130,7 @@ export default function ClinicsPage() {
                 className={styles.heroImg}
                 priority
               />
-            </div>
+            {/* </div> */}
           </div>
         </section>
 
