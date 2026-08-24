@@ -184,6 +184,16 @@
 
     // var(--shadow-glow);
   animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+
+  &.darkInvert {
+    /* Default dark mode filter */
+    filter: invert(1);
+
+    /* Reset back to normal in light mode */
+    [data-theme="light"] & {
+      filter: invert(0);
+    }
+  }
 }
 
 // ─── MOCKUP ──────────────────────────────────────────────────────────────────

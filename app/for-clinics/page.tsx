@@ -127,7 +127,7 @@ export default function ClinicsPage() {
                 alt="InstaRoom clinic daily timeline"
                 width={640}
                 height={480}
-                className={styles.heroImg}
+              className={`${styles.heroImg} ${styles.darkInvert}`}
                 priority
               />
             {/* </div> */}

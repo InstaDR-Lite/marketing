@@ -75,7 +75,7 @@ export default function HeroSection() {
           alt="InstaRoom dashboard"
           width={1040}
           height={650}
-          className={styles.heroImg}
+          className={`${styles.heroImg} ${styles.darkInvert}`}
           priority
         />
       </div>

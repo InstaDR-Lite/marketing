@@ -85,6 +85,16 @@
       margin: auto;
       display: block;
     }
+
+    .darkInvert {
+      /* Default dark mode filter */
+      filter: invert(1) ;
+
+      /* Reset back to normal in light mode */
+      [data-theme="light"] & {
+        filter: invert(0);
+      }
+    }
   }
 }
 

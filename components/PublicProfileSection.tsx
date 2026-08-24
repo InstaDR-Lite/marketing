@@ -24,6 +24,7 @@ export default function PublicProfileSection() {
               alt="Public profile"
               height={760}
               width={645}
+              className={styles.darkInvert}
             />
           </div>
 
