@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist_Mono, Geist, Fraunces } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import '../styles/globals.scss';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const geist = Geist({
   subsets: ['latin'],
@@ -63,6 +64,7 @@ export default function RootLayout({
         <ThemeProvider>
           <div className="noise-overlay" aria-hidden="true" />
           {children}
+          <GoogleAnalytics gaId="G-GS12HD3B0X" />
         </ThemeProvider>
       </body>
     </html>
