@@ -178,9 +178,9 @@
   background: #0A0F1A;
   overflow: hidden;
   margin-bottom: 3rem;
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,0.04),
-    0 32px 80px rgba(0,0,0,0.15);
+  // box-shadow:
+  //   0 0 0 1px rgba(255,255,255,0.04),
+  //   0 32px 80px rgba(0,0,0,0.15);
 
     // var(--shadow-glow);
   animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
