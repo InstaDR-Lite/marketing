@@ -44,7 +44,7 @@ export default function HeroSection() {
   }, []);  
   
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="hero">
       {/* ── top copy ── */}
       {/* <div className={styles.pill}>
         <span className={styles.pillDot} />
@@ -79,77 +79,13 @@ export default function HeroSection() {
           priority
         />
       </div>
-      <div className={styles.ctas}>
+      <div className={styles.ctas} id="demo">
         <a href="#pricing" className={styles.ctaPrimary}>Claim Your Room</a>
         <button onClick={() => setShowDemo(true)} className={styles.ctaSecondary}>
           Book a 15-minute demo
         </button>
       </div>
 
-      {/* ── browser mockup ── */}
-      <div className={styles.mockup}>
-        {/* chrome bar */}
-        <div className={styles.chrome}>
-          <div className={styles.dots}>
-            <span className={styles.dotRed} />
-            <span className={styles.dotYellow} />
-            <span className={styles.dotGreen} />
-          </div>
-          <div className={styles.addressBar}>
-            <span className={styles.activeDot} />
-            instaroom.link/dr-malik
-          </div>
-          <div className={styles.nativeTag}>Native in Safari · No Install</div>
-        </div>
-
-        {/* content */}
-        <div className={styles.mockupBody}>
-          {/* ── video panel ── */}
-          <div className={styles.videoPanel}>
-            <div className={styles.secureTag}>
-              <span className={styles.secureTagDot} />
-              Secure room active
-            </div>
-
-            {/* ambient glow */}
-            <div className={styles.glow} />
-
-            {/* PiP — bottom-left on desktop, top-right on mobile */}
-            <div className={styles.pip}>
-              <div className={styles.pipVideo} />
-              <div className={styles.pipMeta}>
-                <div className={styles.pipName}>Avery Chen</div>
-                <div className={styles.pipStatus}>Waiting room cleared · 02:14</div>
-              </div>
-            </div>
-          </div>
-
-          {/* ── telemetry panel — hidden on mobile ── */}
-          <div className={styles.telemetry}>
-            <div className={styles.telemetryTitle}>Room telemetry</div>
-            <div className={styles.telemetrySub}>
-              Real-time connection, license,<br />and billing state for every consult.
-            </div>
-
-            <div className={styles.telemetryRows}>
-              <div className={styles.telemetryRow}>
-                <span className={styles.telemetryLabel}>Jurisdiction</span>
-                <span className={styles.telemetryVerified}>Verified</span>
-              </div>
-              <div className={styles.telemetryRow}>
-                <span className={styles.telemetryLabel}>Connection</span>
-                <span className={`${styles.telemetryValue} ${styles.telemetryMs}`} key={tick}>
-                  {latency}ms
-                </span>
-              </div>
-              <div className={styles.telemetryRow}>
-                <span className={styles.telemetryLabel}>Session fee</span>
-                <span className={styles.telemetryValue}>$150.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       {showDemo && <BookDemoModal onClose={() => setShowDemo(false)} />}
     </section>
   );
