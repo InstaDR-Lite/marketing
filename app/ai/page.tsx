@@ -153,7 +153,9 @@ export default function AIPage() {
 
       <section className={styles.publicSection}>
         <div className={styles.publicText}>
-          <h2>Private and public notes. Finally!</h2>
+          <h2 style={{
+            fontWeight: "800"
+          }}>Private and public notes. Finally!</h2>
           <p className={styles.publicSub}>
             Your SOAP note stays yours — <b>  encrypted, HIPAA-compliant, audit-ready</b>.
             Your patient gets context — names, team, actionable.
