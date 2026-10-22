@@ -80,7 +80,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
               </div>
             </div>
 
-            <h2 className={styles.title}>{title}</h2>
+            <h3 className={styles.title}>{title}</h3>
 
             <p className={styles.description}>{description}</p>
 

@@ -20,7 +20,7 @@ export default function ClinicBento() {
             // the clinic experience
           </div>
           <h2 className="text-[2rem] lg:text-[3.2rem] font-bold mb-4 tracking-tight"
-              style={{ color: 'var(--color-text-primary)', fontFamily: 'var(--font-mono)' }}>
+              style={{ color: 'var(--color-text-primary)'}}>
             From booking to billing.
           </h2>
           <p className="text-lg max-w-2xl mx-auto"

@@ -24,7 +24,7 @@
 }
 
 .sectionLabel {
-  font-family: var(--font-mono);
+  // font-family: var(--font-mono);
   font-size: 11px;
   color: var(--color-teal);
   text-transform: uppercase;
@@ -92,11 +92,12 @@
 
 .featureText {
   h4 {
-    font-family: var(--font-mono);
+    // font-family: var(--font-mono);
     // font-size: 13
     color: var(--color-text-primary);
     margin-bottom: 4px;
     letter-spacing: 0.02em;
+    font-weight: 700;
   }
 
   p {

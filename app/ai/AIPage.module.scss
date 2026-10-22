@@ -266,7 +266,7 @@
 
 // ─── ZENNOTES ──────────────────────────────────────────────────────────────
 .zennotes {
-  padding: 8rem 24px;
+  padding: 10rem 24px;
   background: var(--color-surface);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
@@ -286,11 +286,11 @@
 }
 
 .zennotesTitle {
-  font-family: var(--font-mono);
+  // font-family: var(--font-mono);
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  color: var(--color-teal);
+  // color: var(--color-teal);
   margin-bottom: 4px;
 }
 
@@ -434,9 +434,9 @@
 
 .publicText {
   h2 {
-    font-family: var(--font-mono), monospace;
+    // font-family: var(--font-mono), monospace;
     font-size: clamp(1.8rem, 3vw, 3.2rem);
-    // font-weight: 700;
+    font-weight: 700;
     // color: var(--color--grey3);
     letter-spacing: -0.025em;
     line-height: 1.15;

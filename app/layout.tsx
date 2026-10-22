@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist_Mono, Geist, Fraunces } from 'next/font/google';
+import { Geist_Mono, Geist, Fraunces, Plus_Jakarta_Sans } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import '../styles/globals.scss';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -28,6 +28,13 @@ const fraunces = Fraunces({
   // (opsz = optical size, SOFT = softness, WONK = wonky/chiseled characters)
   axes: ['opsz'], 
 });
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['700', '800'],
+  variable: '--font-plus-jakarta-sans',
+  display: 'swap',
+}); 
 
 export const metadata: Metadata = {
   title: 'InstaRoom — Get your permanent virtual room today',
@@ -58,7 +65,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}
+      className={`${geist.variable} ${geistMono.variable} ${fraunces.variable} ${plusJakartaSans.variable} antialiased`}
     >
       <body>
         <ThemeProvider>
